@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TRUST_REGION_STEP_FAILED" xml:space="preserve">
+    <value>"trust region step has failed to reduce Q",</value>
+  </data>
+  <data name="NEGATIVE_NUMBER_OF_SUCCESSES" xml:space="preserve">
+    <value>"number of successes must be non-negative ({0})",</value>
+  </data>
+  <data name="UNPARSEABLE_3D_VECTOR" xml:space="preserve">
+    <value>"unparseable 3D vector: "{0}"",</value>
+  </data>
+  <data name="BESSEL_FUNCTION_FAILED_CONVERGENCE" xml:space="preserve">
+    <value>"Bessel function of order {0} failed to converge for x = {1}",</value>
+  </data>
+  <data name="INSUFFICIENT_DATA_FOR_T_STATISTIC" xml:space="preserve">
+    <value>"insufficient data for t statistic, needs at least 2, got {0}",</value>
+  </data>
+  <data name="EMPTY_SELECTED_COLUMN_INDEX_ARRAY" xml:space="preserve">
+    <value>"empty selected column index array",</value>
+  </data>
+  <data name="CANNOT_DISCARD_NEGATIVE_NUMBER_OF_ELEMENTS" xml:space="preserve">
+    <value>"cannot discard a negative number of elements ({0})",</value>
+  </data>
+  <data name="INVALID_REGRESSION_ARRAY" xml:space="preserve">
+    <value>"input data array length = {0} does not match the number of observations = {1} and the number of regressors = {2}",</value>
+  </data>
+  <data name="INVALID_ITERATIONS_LIMITS" xml:space="preserve">
+    <value>"invalid iteration limits: min={0}, max={1}",</value>
+  </data>
+  <data name="NO_REGRESSORS" xml:space="preserve">
+    <value>"Regression model must include at least one regressor",</value>
+  </data>
+  <data name="NOT_POSITIVE_POISSON_MEAN" xml:space="preserve">
+    <value>"the Poisson mean must be positive ({0})",</value>
+  </data>
+  <data name="NOT_ENOUGH_POINTS_IN_SPLINE_PARTITION" xml:space="preserve">
+    <value>"spline partition must have at least {0} points, got {1}",</value>
+  </data>
+  <data name="COVARIANCE_MATRIX" xml:space="preserve">
+    <value>"covariance matrix", </value>
+  </data>
+  <data name="NON_REAL_FINITE_WEIGHT" xml:space="preserve">
+    <value>"all weights must be finite real numbers, but {0}-th is {1}",</value>
+  </data>
+  <data name="LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE" xml:space="preserve">
+    <value>"list of chromosomes bigger than maxPopulationSize",</value>
+  </data>
+  <data name="NOT_POSITIVE_EXPONENT" xml:space="preserve">
+    <value>"invalid exponent {0} (must be positive)",</value>
+  </data>
+  <data name="SIMPLEX_NEED_ONE_POINT" xml:space="preserve">
+    <value>"simplex must contain at least one point",</value>
+  </data>
+  <data name="NORMALIZE_NAN" xml:space="preserve">
+    <value>"Cannot normalize to NaN",</value>
+  </data>
+  <data name="LOWER_ENDPOINT_ABOVE_UPPER_ENDPOINT" xml:space="preserve">
+    <value>"lower endpoint ({0}) must be less than or equal to upper endpoint ({1})",</value>
+  </data>
+  <data name="SUBARRAY_ENDS_AFTER_ARRAY_END" xml:space="preserve">
+    <value>"subarray ends after array end",</value>
+  </data>
+  <data name="NO_FEASIBLE_SOLUTION" xml:space="preserve">
+    <value>"no feasible solution",</value>
+  </data>
+  <data name="CROSSOVER_RATE" xml:space="preserve">
+    <value>"crossover rate ({0})",</value>
+  </data>
+  <data name="TOO_MANY_ELEMENTS_TO_DISCARD_FROM_ARRAY" xml:space="preserve">
+    <value>"cannot discard {0} elements from a {1} elements array",</value>
+  </data>
+  <data name="NOT_POWER_OF_TWO_CONSIDER_PADDING" xml:space="preserve">
+    <value>"{0} is not a power of 2, consider padding for fix",</value>
+  </data>
+  <data name="CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR" xml:space="preserve">
+    <value>"contraction criteria ({0}) smaller than the expansion factor ({1}).  This would lead to a never ending loop of expansion and contraction as a newly expanded internal storage array would immediately satisfy the criteria for contraction.",</value>
+  </data>
+  <data name="NOT_POSITIVE_ELEMENT_AT_INDEX" xml:space="preserve">
+    <value>"element {0} is not positive: {1}",</value>
+  </data>
+  <data name="TWO_OR_MORE_CATEGORIES_REQUIRED" xml:space="preserve">
+    <value>"two or more categories required, got {0}",</value>
+  </data>
+  <data name="UNSUPPORTED_EXPANSION_MODE" xml:space="preserve">
+    <value>"unsupported expansion mode {0}, supported modes are {1} ({2}) and {3} ({4})",</value>
+  </data>
+  <data name="SAMPLE_SIZE_LARGER_THAN_POPULATION_SIZE" xml:space="preserve">
+    <value>"sample size ({0}) must be less than or equal to population size ({1})",</value>
+  </data>
+  <data name="NOT_STRICTLY_INCREASING_KNOT_VALUES" xml:space="preserve">
+    <value>"knot values must be strictly increasing",</value>
+  </data>
+  <data name="ILL_CONDITIONED_OPERATOR" xml:space="preserve">
+    <value>"condition number {1} is too high ",</value>
+  </data>
+  <data name="NOT_MULTIPLICATION_COMPATIBLE_MATRICES" xml:space="preserve">
+    <value>"{0}x{1} and {2}x{3} matrices are not multiplication compatible",</value>
+  </data>
+  <data name="EMPTY_STRING_FOR_IMAGINARY_CHARACTER" xml:space="preserve">
+    <value>"empty string for imaginary character",</value>
+  </data>
+  <data name="PROPAGATION_DIRECTION_MISMATCH" xml:space="preserve">
+    <value>"propagation direction mismatch",</value>
+  </data>
+  <data name="NOT_POSITIVE_PERMUTATION" xml:space="preserve">
+    <value>"permutation k ({0}) must be positive",</value>
+  </data>
+  <data name="NEGATIVE_ELEMENT_AT_2D_INDEX" xml:space="preserve">
+    <value>"element ({0}, {1}) is negative: {2}",</value>
+  </data>
+  <data name="NUMBER_OF_TRIALS" xml:space="preserve">
+    <value>"number of trials ({0})",</value>
+  </data>
+  <data name="EULER_ANGLES_SINGULARITY" xml:space="preserve">
+    <value>"Euler angles singularity",</value>
+  </data>
+  <data name="NON_REAL_FINITE_ORDINATE" xml:space="preserve">
+    <value>"all ordinatae must be finite real numbers, but {0}-th is {1}",</value>
+  </data>
+  <data name="CANNOT_SET_AT_NEGATIVE_INDEX" xml:space="preserve">
+    <value>"cannot set an element at a negative index {0}",</value>
+  </data>
+  <data name="NOT_POSITIVE_DEFINITE_MATRIX" xml:space="preserve">
+    <value>"not positive definite matrix", </value>
+  </data>
+  <data name="CONVERGENCE_FAILED" xml:space="preserve">
+    <value>"convergence failed", </value>
+  </data>
+  <data name="INVALID_ROUNDING_METHOD" xml:space="preserve">
+    <value>"invalid rounding method {0}, valid methods: {1} ({2}), {3} ({4}), {5} ({6}), {7} ({8}), {9} ({10}), {11} ({12}), {13} ({14}), {15} ({16})",</value>
+  </data>
+  <data name="FUNCTION" xml:space="preserve">
+    <value>"function", </value>
+  </data>
+  <data name="BESSEL_FUNCTION_BAD_ARGUMENT" xml:space="preserve">
+    <value>"Bessel function of order {0} cannot be computed for x = {1}",</value>
+  </data>
+  <data name="NOT_ADDITION_COMPATIBLE_MATRICES" xml:space="preserve">
+    <value>"{0}x{1} and {2}x{3} matrices are not addition compatible",</value>
+  </data>
+  <data name="NUMBER_TOO_LARGE_BOUND_EXCLUDED" xml:space="preserve">
+    <value>"{0} is larger than, or equal to, the maximum ({1})", </value>
+  </data>
+  <data name="DIFFERENT_ORIG_AND_PERMUTED_DATA" xml:space="preserve">
+    <value>"original and permuted data must contain the same elements",</value>
+  </data>
+  <data name="AT_LEAST_ONE_COLUMN" xml:space="preserve">
+    <value>"matrix must have at least one column",</value>
+  </data>
+  <data name="VECTOR_LENGTH_MISMATCH" xml:space="preserve">
+    <value>"vector length mismatch: got {0} but expected {1}",</value>
+  </data>
+  <data name="FIRST_COLUMNS_NOT_INITIALIZED_YET" xml:space="preserve">
+    <value>"first {0} columns are not initialized yet",</value>
+  </data>
+  <data name="INVALID_IMPLEMENTATION" xml:space="preserve">
+    <value>"required functionality is missing in {0}",</value>
+  </data>
+  <data name="NUMBER_OF_POINTS" xml:space="preserve">
+    <value>"number of points ({0})", </value>
+  </data>
+  <data name="NON_POSITIVE_MICROSPHERE_ELEMENTS" xml:space="preserve">
+    <value>"number of microsphere elements must be positive, but got {0}",</value>
+  </data>
+  <data name="DENOMINATOR" xml:space="preserve">
+    <value>"denominator", </value>
+  </data>
+  <data name="DISTRIBUTION_NOT_LOADED" xml:space="preserve">
+    <value>"distribution not loaded",</value>
+  </data>
+  <data name="ITERATOR_EXHAUSTED" xml:space="preserve">
+    <value>"iterator exhausted",</value>
+  </data>
+  <data name="NON_REAL_FINITE_ABSCISSA" xml:space="preserve">
+    <value>"all abscissae must be finite real numbers, but {0}-th is {1}",</value>
+  </data>
+  <data name="DIMENSIONS_MISMATCH_SIMPLE" xml:space="preserve">
+    <value>"{0} != {1}", </value>
+  </data>
+  <data name="EXPANSION_FACTOR_SMALLER_THAN_ONE" xml:space="preserve">
+    <value>"expansion factor smaller than one ({0})",</value>
+  </data>
+  <data name="ARGUMENT_OUTSIDE_DOMAIN" xml:space="preserve">
+    <value>"Argument {0} outside domain [{1} ; {2}]",</value>
+  </data>
+  <data name="NAN_VALUE_CONVERSION" xml:space="preserve">
+    <value>"cannot convert NaN value",</value>
+  </data>
+  <data name="LENGTH" xml:space="preserve">
+    <value>"length ({0})", </value>
+  </data>
+  <data name="TOO_MANY_REGRESSORS" xml:space="preserve">
+    <value>"too many regressors ({0}) specified, only {1} in the model",</value>
+  </data>
+  <data name="NOT_POSITIVE_WINDOW_SIZE" xml:space="preserve">
+    <value>"window size must be positive ({0})",</value>
+  </data>
+  <data name="UNPARSEABLE_REAL_VECTOR" xml:space="preserve">
+    <value>"unparseable real vector: "{0}"",</value>
+  </data>
+  <data name="INSUFFICIENT_ROWS_AND_COLUMNS" xml:space="preserve">
+    <value>"insufficient data: only {0} rows and {1} columns.",</value>
+  </data>
+  <data name="INFINITE_ARRAY_ELEMENT" xml:space="preserve">
+    <value>"Array contains an infinite element, {0} at index {1}",</value>
+  </data>
+  <data name="NOT_POSITIVE_MEAN" xml:space="preserve">
+    <value>"mean must be positive ({0})",</value>
+  </data>
+  <data name="INPUT_DATA_FROM_UNSUPPORTED_DATASOURCE" xml:space="preserve">
+    <value>"input data comes from unsupported datasource: {0}, supported sources: {1}, {2}",</value>
+  </data>
+  <data name="MISMATCHED_LOESS_ABSCISSA_ORDINATE_ARRAYS" xml:space="preserve">
+    <value>"Loess expects the abscissa and ordinate arrays to be of the same size, but got {0} abscissae and {1} ordinatae",</value>
+  </data>
+  <data name="OUT_OF_RANGE" xml:space="preserve">
+    <value>"out of range", </value>
+  </data>
+  <data name="NO_SUCH_MATRIX_ENTRY" xml:space="preserve">
+    <value>"no entry at indices ({0}, {1}) in a {2}x{3} matrix",</value>
+  </data>
+  <data name="CANNOT_COMPUTE_BETA_DENSITY_AT_1_FOR_SOME_BETA" xml:space="preserve">
+    <value>"cannot compute beta density at 1 when beta = %.3g",</value>
+  </data>
+  <data name="LOWER_BOUND_NOT_BELOW_UPPER_BOUND" xml:space="preserve">
+    <value>"lower bound ({0}) must be strictly less than upper bound ({1})", </value>
+  </data>
+  <data name="NUMBER_OF_SAMPLES" xml:space="preserve">
+    <value>"number of samples ({0})", </value>
+  </data>
+  <data name="ARRAY_SIZES_SHOULD_HAVE_DIFFERENCE_1" xml:space="preserve">
+    <value>"array sizes should have difference 1 ({0} != {1} + 1)",</value>
+  </data>
+  <data name="CLOSEST_ORTHOGONAL_MATRIX_HAS_NEGATIVE_DETERMINANT" xml:space="preserve">
+    <value>"the closest orthogonal matrix has a negative determinant {0}",</value>
+  </data>
+  <data name="CANNOT_COMPUTE_NTH_ROOT_FOR_NEGATIVE_N" xml:space="preserve">
+    <value>"cannot compute nth root for null or negative n: {0}",</value>
+  </data>
+  <data name="FRACTION_CONVERSION_OVERFLOW" xml:space="preserve">
+    <value>"Overflow trying to convert {0} to fraction ({1}/{2})",</value>
+  </data>
+  <data name="ENDPOINTS_NOT_AN_INTERVAL" xml:space="preserve">
+    <value>"endpoints do not specify an interval: [{0}, {1}]",</value>
+  </data>
+  <data name="INSTANCES_NOT_COMPARABLE_TO_EXISTING_VALUES" xml:space="preserve">
+    <value>"instance of class {0} not comparable to existing values",</value>
+  </data>
+  <data name="STANDARD_DEVIATION" xml:space="preserve">
+    <value>"standard deviation ({0})", </value>
+  </data>
+  <data name="ZERO_NORM_FOR_ROTATION_AXIS" xml:space="preserve">
+    <value>"zero norm for rotation axis",</value>
+  </data>
+  <data name="FIRST_ELEMENT_NOT_ZERO" xml:space="preserve">
+    <value>"first element is not 0: {0}",</value>
+  </data>
+  <data name="CANNOT_NORMALIZE_A_ZERO_NORM_VECTOR" xml:space="preserve">
+    <value>"cannot normalize a zero norm vector",</value>
+  </data>
+  <data name="CANNOT_CLEAR_STATISTIC_CONSTRUCTED_FROM_EXTERNAL_MOMENTS" xml:space="preserve">
+    <value>"statistics constructed from external moments cannot be cleared",</value>
+  </data>
+  <data name="POWER_NEGATIVE_PARAMETERS" xml:space="preserve">
+    <value>"cannot raise an integral value to a negative power ({0}^{1})",</value>
+  </data>
+  <data name="NO_OPTIMUM_COMPUTED_YET" xml:space="preserve">
+    <value>"no optimum computed yet", </value>
+  </data>
+  <data name="NOT_POSITIVE_SHAPE" xml:space="preserve">
+    <value>"shape must be positive ({0})",</value>
+  </data>
+  <data name="NOT_POSITIVE_SCALE" xml:space="preserve">
+    <value>"scale must be positive ({0})",</value>
+  </data>
+  <data name="INCONSISTENT_STATE_AT_2_PI_WRAPPING" xml:space="preserve">
+    <value>"inconsistent state at 2π wrapping",</value>
+  </data>
+  <data name="NOT_DECREASING_SEQUENCE" xml:space="preserve">
+    <value>"points {3} and {2} are not decreasing ({1} &lt; {0})", </value>
+  </data>
+  <data name="INTERNAL_ERROR" xml:space="preserve">
+    <value>"internal error, please fill a bug report at {0}",</value>
+  </data>
+  <data name="NUMERATOR_OVERFLOW_AFTER_MULTIPLY" xml:space="preserve">
+    <value>"overflow, numerator too large after multiply: {0}",</value>
+  </data>
+  <data name="CANNOT_TRANSFORM_TO_DOUBLE" xml:space="preserve">
+    <value>"Conversion Exception in Transformation: {0}",</value>
+  </data>
+  <data name="UNABLE_TO_PERFORM_QR_DECOMPOSITION_ON_JACOBIAN" xml:space="preserve">
+    <value>"unable to perform Q.R decomposition on the {0}x{1} jacobian matrix",</value>
+  </data>
+  <data name="EVALUATION" xml:space="preserve">
+    <value>"evaluation", </value>
+  </data>
+  <data name="TOO_SMALL_PARAMETERS_RELATIVE_TOLERANCE" xml:space="preserve">
+    <value>"parameters relative tolerance is too small ({0}), no further improvement in the approximate solution is possible",</value>
+  </data>
+  <data name="INITIAL_COLUMN_AFTER_FINAL_COLUMN" xml:space="preserve">
+    <value>"initial column {1} after final column {0}",</value>
+  </data>
+  <data name="INDEX_OUT_OF_RANGE" xml:space="preserve">
+    <value>"index {0} out of allowed range [{1}, {2}]",</value>
+  </data>
+  <data name="LOESS_EXPECTS_AT_LEAST_ONE_POINT" xml:space="preserve">
+    <value>"Loess expects at least 1 point",</value>
+  </data>
+  <data name="NOT_SYMMETRIC_MATRIX" xml:space="preserve">
+    <value>"not symmetric matrix",</value>
+  </data>
+  <data name="MAX_ITERATIONS_EXCEEDED" xml:space="preserve">
+    <value>"maximal number of iterations ({0}) exceeded",</value>
+  </data>
+  <data name="OUT_OF_BOUNDS_CONFIDENCE_LEVEL" xml:space="preserve">
+    <value>"out of bounds confidence level {0}, must be between {1} and {2}",</value>
+  </data>
+  <data name="INSUFFICIENT_OBSERVED_POINTS_IN_SAMPLE" xml:space="preserve">
+    <value>"sample contains {0} observed points, at least {1} are required",</value>
+  </data>
+  <data name="POLYNOMIAL" xml:space="preserve">
+    <value>"polynomial", </value>
+  </data>
+  <data name="OVERFLOW_IN_MULTIPLICATION" xml:space="preserve">
+    <value>"overflow in multiplication: {0} * {1}",</value>
+  </data>
+  <data name="WRONG_NUMBER_OF_POINTS" xml:space="preserve">
+    <value>"{0} points are required, got only {1}",</value>
+  </data>
+  <data name="NOT_STRICTLY_DECREASING_NUMBER_OF_POINTS" xml:space="preserve">
+    <value>"points {0} and {1} are not strictly decreasing ({2} &lt;= {3})",</value>
+  </data>
+  <data name="CANNOT_FORMAT_INSTANCE_AS_COMPLEX" xml:space="preserve">
+    <value>"cannot format a {0} instance as a complex number",</value>
+  </data>
+  <data name="ZERO_NOT_ALLOWED" xml:space="preserve">
+    <value>"zero not allowed here"</value>
+  </data>
+  <data name="EMPTY_CLUSTER_IN_K_MEANS" xml:space="preserve">
+    <value>"empty cluster in k-means",</value>
+  </data>
+  <data name="NOT_ENOUGH_DATA_FOR_NUMBER_OF_PREDICTORS" xml:space="preserve">
+    <value>"not enough data ({0} rows) for this many predictors ({1} predictors)",</value>
+  </data>
+  <data name="NO_RESULT_AVAILABLE" xml:space="preserve">
+    <value>"no result available",</value>
+  </data>
+  <data name="NOT_POSITIVE_NUMBER_OF_SAMPLES" xml:space="preserve">
+    <value>"number of sample is not positive: {0}",</value>
+  </data>
+  <data name="NORMALIZE_INFINITE" xml:space="preserve">
+    <value>"Cannot normalize to an infinite value",</value>
+  </data>
+  <data name="UNPARSEABLE_COMPLEX_NUMBER" xml:space="preserve">
+    <value>"unparseable complex number: "{0}"",</value>
+  </data>
+  <data name="OBJECT_TRANSFORMATION" xml:space="preserve">
+    <value>"conversion exception in transformation", </value>
+  </data>
+  <data name="SAME_SIGN_AT_ENDPOINTS" xml:space="preserve">
+    <value>"function values at endpoints do not have different signs, endpoints: [{0}, {1}], values: [{2}, {3}]",</value>
+  </data>
+  <data name="VALUES_ADDED_BEFORE_CONFIGURING_STATISTIC" xml:space="preserve">
+    <value>"{0} values have been added before statistic is configured",</value>
+  </data>
+  <data name="SAMPLE_SIZE_EXCEEDS_COLLECTION_SIZE" xml:space="preserve">
+    <value>"sample size ({0}) exceeds collection size ({1})", </value>
+  </data>
+  <data name="CONTINUED_FRACTION_INFINITY_DIVERGENCE" xml:space="preserve">
+    <value>"Continued fraction convergents diverged to +/- infinity for value {0}",</value>
+  </data>
+  <data name="ZERO_DENOMINATOR_IN_FRACTION" xml:space="preserve">
+    <value>"zero denominator in fraction {0}/{1}",</value>
+  </data>
+  <data name="NOT_INCREASING_SEQUENCE" xml:space="preserve">
+    <value>"points {3} and {2} are not increasing ({1} &gt; {0})", </value>
+  </data>
+  <data name="START_POSITION" xml:space="preserve">
+    <value>"start position ({0})", </value>
+  </data>
+  <data name="NON_SQUARE_MATRIX" xml:space="preserve">
+    <value>"non square ({0}x{1}) matrix",</value>
+  </data>
+  <data name="INVALID_BINARY_CHROMOSOME" xml:space="preserve">
+    <value>"binary mutation works on BinaryChromosome only",</value>
+  </data>
+  <data name="TOO_SMALL_COST_RELATIVE_TOLERANCE" xml:space="preserve">
+    <value>"cost relative tolerance is too small ({0}), no further reduction in the sum of squares is possible",</value>
+  </data>
+  <data name="NAN_ELEMENT_AT_INDEX" xml:space="preserve">
+    <value>"element {0} is NaN",</value>
+  </data>
+  <data name="UNABLE_TO_ORTHOGONOLIZE_MATRIX" xml:space="preserve">
+    <value>"unable to orthogonalize matrix in {0} iterations",</value>
+  </data>
+  <data name="POLYNOMIAL_INTERPOLANTS_MISMATCH_SEGMENTS" xml:space="preserve">
+    <value>"number of polynomial interpolants must match the number of segments ({0} != {1} - 1)",</value>
+  </data>
+  <data name="HOLE_BETWEEN_MODELS_TIME_RANGES" xml:space="preserve">
+    <value>"{0} wide hole between models time ranges",</value>
+  </data>
+  <data name="OUT_OF_RANGE_LEFT" xml:space="preserve">
+    <value>"{0} out of ({1}, {2}] range",</value>
+  </data>
+  <data name="NULL_NOT_ALLOWED" xml:space="preserve">
+    <value>"null is not allowed", </value>
+  </data>
+  <data name="NUMBER_TOO_SMALL_BOUND_EXCLUDED" xml:space="preserve">
+    <value>"{0} is smaller than, or equal to, the minimum ({1})", </value>
+  </data>
+  <data name="EMPTY_SELECTED_ROW_INDEX_ARRAY" xml:space="preserve">
+    <value>"empty selected row index array",</value>
+  </data>
+  <data name="DIMENSIONS_MISMATCH_2x2" xml:space="preserve">
+    <value>"got {0}x{1} but expected {2}x{3}", </value>
+  </data>
+  <data name="CANNOT_RETRIEVE_AT_NEGATIVE_INDEX" xml:space="preserve">
+    <value>"elements cannot be retrieved from a negative array index {0}",</value>
+  </data>
+  <data name="ZERO_NORM_FOR_ROTATION_DEFINING_VECTOR" xml:space="preserve">
+    <value>"zero norm for rotation defining vector",</value>
+  </data>
+  <data name="BANDWIDTH" xml:space="preserve">
+    <value>"bandwidth ({0})",</value>
+  </data>
+  <data name="INFINITE_BOUND" xml:space="preserve">
+    <value>"interval bounds must be finite",</value>
+  </data>
+  <data name="ARRAY_ZERO_LENGTH_OR_NULL_NOT_ALLOWED" xml:space="preserve">
+    <value>"a null or zero length array not allowed",</value>
+  </data>
+  <data name="CARDAN_ANGLES_SINGULARITY" xml:space="preserve">
+    <value>"Cardan angles singularity",</value>
+  </data>
+  <data name="OUT_OF_RANGE_RIGHT" xml:space="preserve">
+    <value>"{0} out of [{1}, {2}) range",</value>
+  </data>
+  <data name="INDEX_NOT_POSITIVE" xml:space="preserve">
+    <value>"index ({0}) is not positive",</value>
+  </data>
+  <data name="DIFFERENT_ROWS_LENGTHS" xml:space="preserve">
+    <value>"some rows have length {0} while others have length {1}",</value>
+  </data>
+  <data name="ROTATION_MATRIX_DIMENSIONS" xml:space="preserve">
+    <value>"a {0}x{1} matrix cannot be a rotation matrix",</value>
+  </data>
+  <data name="NO_CONVERGENCE_WITH_ANY_START_POINT" xml:space="preserve">
+    <value>"none of the {0} start points lead to convergence", </value>
+  </data>
+  <data name="ITERATIONS" xml:space="preserve">
+    <value>"iterations", </value>
+  </data>
+  <data name="UNABLE_TO_BRACKET_OPTIMUM_IN_LINE_SEARCH" xml:space="preserve">
+    <value>"unable to bracket optimum in line search",</value>
+  </data>
+  <data name="EVALUATIONS" xml:space="preserve">
+    <value>"evaluations", </value>
+  </data>
+  <data name="PERMUTATION_SIZE" xml:space="preserve">
+    <value>"permutation size ({0}", </value>
+  </data>
+  <data name="DEGREES_OF_FREEDOM" xml:space="preserve">
+    <value>"degrees of freedom ({0})", </value>
+  </data>
+  <data name="NOT_CONVEX" xml:space="preserve">
+    <value>"vertices do not form a convex hull in CCW winding",</value>
+  </data>
+  <data name="DISCRETE_CUMULATIVE_PROBABILITY_RETURNED_NAN" xml:space="preserve">
+    <value>"Discrete cumulative probability function returned NaN for argument {0}",</value>
+  </data>
+  <data name="NOT_POSITIVE_SAMPLE_SIZE" xml:space="preserve">
+    <value>"sample size must be positive ({0})",</value>
+  </data>
+  <data name="MINIMAL_STEPSIZE_REACHED_DURING_INTEGRATION" xml:space="preserve">
+    <value>"minimal step size ({1,number,0.00E00}) reached, integration needs {0,number,0.00E00}",</value>
+  </data>
+  <data name="ARRAY_ELEMENT" xml:space="preserve">
+    <value>"value {0} at index {1}", </value>
+  </data>
+  <data name="OUT_OF_RANGE_SIMPLE" xml:space="preserve">
+    <value>"{0} out of [{1}, {2}] range", </value>
+  </data>
+  <data name="OBSERVED_COUNTS_BOTTH_ZERO_FOR_ENTRY" xml:space="preserve">
+    <value>"observed counts are both zero for entry {0}",</value>
+  </data>
+  <data name="RANDOMKEY_MUTATION_WRONG_CLASS" xml:space="preserve">
+    <value>"RandomKeyMutation works only with RandomKeys, not {0}",</value>
+  </data>
+  <data name="FACTORIAL_NEGATIVE_PARAMETER" xml:space="preserve">
+    <value>"must have n &gt;= 0 for n!, got n = {0}",</value>
+  </data>
+  <data name="IMAGINARY_FORMAT" xml:space="preserve">
+    <value>"imaginary format", </value>
+  </data>
+  <data name="INPUT_ARRAY" xml:space="preserve">
+    <value>"input array", </value>
+  </data>
+  <data name="NOT_STRICTLY_DECREASING_SEQUENCE" xml:space="preserve">
+    <value>"points {3} and {2} are not strictly decreasing ({1} &lt;= {0})", </value>
+  </data>
+  <data name="INSUFFICIENT_DIMENSION" xml:space="preserve">
+    <value>"insufficient dimension {0}, must be at least {1}",</value>
+  </data>
+  <data name="AT_LEAST_ONE_ROW" xml:space="preserve">
+    <value>"matrix must have at least one row",</value>
+  </data>
+  <data name="ZERO_FRACTION_TO_DIVIDE_BY" xml:space="preserve">
+    <value>"the fraction to divide by must not be zero: {0}/{1}",</value>
+  </data>
+  <data name="OUTLINE_BOUNDARY_LOOP_OPEN" xml:space="preserve">
+    <value>"an outline boundary loop is open",</value>
+  </data>
+  <data name="UNABLE_TO_FIRST_GUESS_HARMONIC_COEFFICIENTS" xml:space="preserve">
+    <value>"unable to first guess the harmonic coefficients",</value>
+  </data>
+  <data name="NEGATIVE_BRIGHTNESS_EXPONENT" xml:space="preserve">
+    <value>"brightness exponent should be positive or null, but got {0}",</value>
+  </data>
+  <data name="INDEX" xml:space="preserve">
+    <value>"index ({0})", </value>
+  </data>
+  <data name="MUTATION_RATE" xml:space="preserve">
+    <value>"mutation rate ({0})",</value>
+  </data>
+  <data name="NON_CONVERGENT_CONTINUED_FRACTION" xml:space="preserve">
+    <value>"Continued fraction convergents failed to converge (in less than {0} iterations) for value {1}",</value>
+  </data>
+  <data name="SCALE" xml:space="preserve">
+    <value>"scale ({0})", </value>
+  </data>
+  <data name="SHAPE" xml:space="preserve">
+    <value>"shape ({0})", </value>
+  </data>
+  <data name="NAN_NOT_ALLOWED" xml:space="preserve">
+    <value>"NaN is not allowed",</value>
+  </data>
+  <data name="NOT_POSITIVE_POPULATION_SIZE" xml:space="preserve">
+    <value>"population size must be positive ({0})",</value>
+  </data>
+  <data name="INTEGRATION_METHOD_NEEDS_AT_LEAST_TWO_PREVIOUS_POINTS" xml:space="preserve">
+    <value>"multistep method needs at least {0} previous steps, got {1}",</value>
+  </data>
+  <data name="UNABLE_TO_COMPUTE_COVARIANCE_SINGULAR_PROBLEM" xml:space="preserve">
+    <value>"unable to compute covariances: singular problem",</value>
+  </data>
+  <data name="CANNOT_INCREMENT_STATISTIC_CONSTRUCTED_FROM_EXTERNAL_MOMENTS" xml:space="preserve">
+    <value>"statistics constructed from external moments cannot be incremented",</value>
+  </data>
+  <data name="NO_DEGREES_OF_FREEDOM" xml:space="preserve">
+    <value>"no degrees of freedom ({0} measurements, {1} parameters)",</value>
+  </data>
+  <data name="NUMBER_OF_INTERPOLATION_POINTS" xml:space="preserve">
+    <value>"number of interpolation points ({0})", </value>
+  </data>
+  <data name="SIGNIFICANCE_LEVEL" xml:space="preserve">
+    <value>"significance level ({0})", </value>
+  </data>
+  <data name="CANNOT_PARSE_AS_TYPE" xml:space="preserve">
+    <value>"string "{0}" unparseable (from position {1}) as an object of type {2}", </value>
+  </data>
+  <data name="ROOTS_OF_UNITY_NOT_COMPUTED_YET" xml:space="preserve">
+    <value>"roots of unity have not been computed yet",</value>
+  </data>
+  <data name="TOO_SMALL_ORTHOGONALITY_TOLERANCE" xml:space="preserve">
+    <value>"orthogonality tolerance is too small ({0}), solution is orthogonal to the jacobian",</value>
+  </data>
+  <data name="PERCENTILE_IMPLEMENTATION_UNSUPPORTED_METHOD" xml:space="preserve">
+    <value>"percentile implementation {0} does not support {1}",</value>
+  </data>
+  <data name="FAILED_BRACKETING" xml:space="preserve">
+    <value>"number of iterations={4}, maximum iterations={5}, initial={6}, lower bound={7}, upper bound={8}, final a value={0}, final b value={1}, f(a)={2}, f(b)={3}",</value>
+  </data>
+  <data name="INFINITE_VALUE_CONVERSION" xml:space="preserve">
+    <value>"cannot convert infinite value",</value>
+  </data>
+  <data name="ASSYMETRIC_EIGEN_NOT_SUPPORTED" xml:space="preserve">
+    <value>"eigen decomposition of assymetric matrices not supported yet",</value>
+  </data>
+  <data name="NOT_POWER_OF_TWO_PLUS_ONE" xml:space="preserve">
+    <value>"{0} is not a power of 2 plus one",</value>
+  </data>
+  <data name="NON_SYMMETRIC_MATRIX" xml:space="preserve">
+    <value>"non symmetric matrix: the difference between entries at ({0},{1}) and ({1},{0}) is larger than {2}", </value>
+  </data>
+  <data name="INVALID_BRACKETING_PARAMETERS" xml:space="preserve">
+    <value>"invalid bracketing parameters:  lower bound={0},  initial={1}, upper bound={2}",</value>
+  </data>
+  <data name="ELITISM_RATE" xml:space="preserve">
+    <value>"elitism rate ({0})",</value>
+  </data>
+  <data name="OVERFLOW_IN_ADDITION" xml:space="preserve">
+    <value>"overflow in addition: {0} + {1}",</value>
+  </data>
+  <data name="DIGEST_NOT_INITIALIZED" xml:space="preserve">
+    <value>"digest not initialized",</value>
+  </data>
+  <data name="NOT_INCREASING_NUMBER_OF_POINTS" xml:space="preserve">
+    <value>"points {0} and {1} are not increasing ({2} &gt; {3})",</value>
+  </data>
+  <data name="EMPTY_INTERPOLATION_SAMPLE" xml:space="preserve">
+    <value>"sample for interpolation is empty",</value>
+  </data>
+  <data name="OVERFLOW_IN_SUBTRACTION" xml:space="preserve">
+    <value>"overflow in subtraction: {0} - {1}",</value>
+  </data>
+  <data name="INVALID_REGRESSION_OBSERVATION" xml:space="preserve">
+    <value>"length of regressor array = {0} does not match the number of variables = {1} in the model",</value>
+  </data>
+  <data name="POPULATION_LIMIT_NOT_POSITIVE" xml:space="preserve">
+    <value>"population limit has to be positive",</value>
+  </data>
+  <data name="NO_BIN_SELECTED" xml:space="preserve">
+    <value>"no bin selected",</value>
+  </data>
+  <data name="NEGATIVE_ELEMENT_AT_INDEX" xml:space="preserve">
+    <value>"element {0} is negative: {1}",</value>
+  </data>
+  <data name="NON_SQUARE_OPERATOR" xml:space="preserve">
+    <value>"non square ({0}x{1}) linear operator", </value>
+  </data>
+  <data name="NOT_POWER_OF_TWO" xml:space="preserve">
+    <value>"{0} is not a power of 2",</value>
+  </data>
+  <data name="OVERFLOW_IN_FRACTION" xml:space="preserve">
+    <value>"overflow in fraction {0}/{1}, cannot negate",</value>
+  </data>
+  <data name="BINOMIAL_INVALID_PARAMETERS_ORDER" xml:space="preserve">
+    <value>"must have n &gt;= k for binomial coefficient (n, k), got k = {0}, n = {1}",</value>
+  </data>
+  <data name="OUT_OF_ORDER_ABSCISSA_ARRAY" xml:space="preserve">
+    <value>"the abscissae array must be sorted in a strictly increasing order, but the {0}-th element is {1} whereas {2}-th is {3}",</value>
+  </data>
+  <data name="NUMERATOR" xml:space="preserve">
+    <value>"numerator", </value>
+  </data>
+  <data name="CANNOT_FORMAT_OBJECT_TO_FRACTION" xml:space="preserve">
+    <value>"cannot format given object as a fraction number",</value>
+  </data>
+  <data name="NON_POSITIVE_POLYNOMIAL_DEGREE" xml:space="preserve">
+    <value>"polynomial degree must be positive: degree={0}",</value>
+  </data>
+  <data name="NOT_POSITIVE_ROW_DIMENSION" xml:space="preserve">
+    <value>"invalid row dimension: {0} (must be positive)",</value>
+  </data>
+  <data name="DIMENSION" xml:space="preserve">
+    <value>"dimension ({0})", </value>
+  </data>
+  <data name="DUPLICATED_ABSCISSA_DIVISION_BY_ZERO" xml:space="preserve">
+    <value>"duplicated abscissa {0} causes division by zero",</value>
+  </data>
+  <data name="ROW_INDEX_OUT_OF_RANGE" xml:space="preserve">
+    <value>"row index {0} out of allowed range [{1}, {2}]",</value>
+  </data>
+  <data name="NUMBER_TOO_SMALL" xml:space="preserve">
+    <value>"{0} is smaller than the minimum ({1})", </value>
+  </data>
+  <data name="ZERO_NORM" xml:space="preserve">
+    <value>"zero norm",</value>
+  </data>
+  <data name="CANNOT_PARSE" xml:space="preserve">
+    <value>"string "{0}" unparseable (from position {1})", </value>
+  </data>
+  <data name="NO_DENSITY_FOR_THIS_DISTRIBUTION" xml:space="preserve">
+    <value>"This distribution does not have a density function implemented",</value>
+  </data>
+  <data name="NUMBER_TOO_LARGE" xml:space="preserve">
+    <value>"{0} is larger than the maximum ({1})", </value>
+  </data>
+  <data name="CANNOT_FORMAT_INSTANCE_AS_REAL_VECTOR" xml:space="preserve">
+    <value>"cannot format a {0} instance as a real vector",</value>
+  </data>
+  <data name="NOT_SUPPORTED_IN_DIMENSION_N" xml:space="preserve">
+    <value>"method not supported in dimension {0}",</value>
+  </data>
+  <data name="NOT_POSITIVE_STANDARD_DEVIATION" xml:space="preserve">
+    <value>"standard deviation must be positive ({0})",</value>
+  </data>
+  <data name="EQUAL_VERTICES_IN_SIMPLEX" xml:space="preserve">
+    <value>"equal vertices {0} and {1} in simplex configuration",</value>
+  </data>
+  <data name="INITIAL_ROW_AFTER_FINAL_ROW" xml:space="preserve">
+    <value>"initial row {1} after final row {0}",</value>
+  </data>
+  <data name="LCM_OVERFLOW_64_BITS" xml:space="preserve">
+    <value>"overflow: lcm({0}, {1}) is 2^63",</value>
+  </data>
+  <data name="NOT_DECREASING_NUMBER_OF_POINTS" xml:space="preserve">
+    <value>"points {0} and {1} are not decreasing ({2} &lt; {3})",</value>
+  </data>
+  <data name="OVERFLOW" xml:space="preserve">
+    <value>"overflow", </value>
+  </data>
+  <data name="NOT_ENOUGH_DATA_REGRESSION" xml:space="preserve">
+    <value>"the number of observations is not sufficient to conduct regression",</value>
+  </data>
+  <data name="UNMATCHED_ODE_IN_EXPANDED_SET" xml:space="preserve">
+    <value>"ode does not match the main ode set in the extended set",</value>
+  </data>
+  <data name="WEIGHT_AT_LEAST_ONE_NON_ZERO" xml:space="preserve">
+    <value>"weigth array must contain at least one non-zero value",</value>
+  </data>
+  <data name="INVALID_MAX_ITERATIONS" xml:space="preserve">
+    <value>"bad value for maximum iterations number: {0}",</value>
+  </data>
+  <data name="ROBUSTNESS_ITERATIONS" xml:space="preserve">
+    <value>"number of robustness iterations ({0})",</value>
+  </data>
+  <data name="OBSERVED_COUNTS_ALL_ZERO" xml:space="preserve">
+    <value>"observed counts are all 0 in observed array {0}",</value>
+  </data>
+  <data name="NOT_FINITE_NUMBER" xml:space="preserve">
+    <value>"{0} is not a finite number", </value>
+  </data>
+  <data name="DENOMINATOR_FORMAT" xml:space="preserve">
+    <value>"denominator format", </value>
+  </data>
+  <data name="NON_POSITIVE_DEFINITE_MATRIX" xml:space="preserve">
+    <value>"not positive definite matrix: diagonal element at ({1},{1}) is smaller than {2} ({0})",</value>
+  </data>
+  <data name="FRACTION" xml:space="preserve">
+    <value>"fraction", </value>
+  </data>
+  <data name="N_POINTS_GAUSS_LEGENDRE_INTEGRATOR_NOT_SUPPORTED" xml:space="preserve">
+    <value>"{0} points Legendre-Gauss integrator not supported, number of points must be in the {1}-{2} range",</value>
+  </data>
+  <data name="ARRAY_SUMS_TO_ZERO" xml:space="preserve">
+    <value>"array sums to zero",</value>
+  </data>
+  <data name="USER_EXCEPTION" xml:space="preserve">
+    <value>"exception generated in user code", </value>
+  </data>
+  <data name="PERMUTATION_EXCEEDS_N" xml:space="preserve">
+    <value>"permutation size ({0}) exceeds permuation domain ({1})", </value>
+  </data>
+  <data name="ROW_INDEX" xml:space="preserve">
+    <value>"row index ({0})", </value>
+  </data>
+  <data name="UNKNOWN_MODE" xml:space="preserve">
+    <value>"unknown mode {0}, known modes: {1} ({2}), {3} ({4}), {5} ({6}), {7} ({8}), {9} ({10}) and {11} ({12})",</value>
+  </data>
+  <data name="UNBOUNDED_SOLUTION" xml:space="preserve">
+    <value>"unbounded solution",</value>
+  </data>
+  <data name="NEGATIVE_COMPLEX_MODULE" xml:space="preserve">
+    <value>"negative complex module {0}",</value>
+  </data>
+  <data name="VECTOR_MUST_HAVE_AT_LEAST_ONE_ELEMENT" xml:space="preserve">
+    <value>"vector must have at least one element",</value>
+  </data>
+  <data name="INVALID_INTERVAL_INITIAL_VALUE_PARAMETERS" xml:space="preserve">
+    <value>"invalid interval, initial value parameters:  lower={0}, initial={1}, upper={2}",</value>
+  </data>
+  <data name="UNSUPPORTED_OPERATION" xml:space="preserve">
+    <value>"unsupported operation", </value>
+  </data>
+  <data name="PERCENTILE_IMPLEMENTATION_CANNOT_ACCESS_METHOD" xml:space="preserve">
+    <value>"cannot access {0} method in percentile implementation {1}",</value>
+  </data>
+  <data name="URL_CONTAINS_NO_DATA" xml:space="preserve">
+    <value>"URL {0} contains no data",</value>
+  </data>
+  <data name="INVALID_FIXED_LENGTH_CHROMOSOME" xml:space="preserve">
+    <value>"one-point crossover only works with fixed-length chromosomes",</value>
+  </data>
+  <data name="DIMENSIONS_MISMATCH" xml:space="preserve">
+    <value>"dimensions mismatch", </value>
+  </data>
+  <data name="REAL_FORMAT" xml:space="preserve">
+    <value>"real format", </value>
+  </data>
+  <data name="COLUMN_INDEX_OUT_OF_RANGE" xml:space="preserve">
+    <value>"column index {0} out of allowed range [{1}, {2}]",</value>
+  </data>
+  <data name="NOT_POSITIVE_LENGTH" xml:space="preserve">
+    <value>"length must be positive ({0})",</value>
+  </data>
+  <data name="CANNOT_COMPUTE_BETA_DENSITY_AT_0_FOR_SOME_ALPHA" xml:space="preserve">
+    <value>"cannot compute beta density at 0 when alpha = {0,number}",</value>
+  </data>
+  <data name="LCM_OVERFLOW_32_BITS" xml:space="preserve">
+    <value>"overflow: lcm({0}, {1}) is 2^31",</value>
+  </data>
+  <data name="NOT_POSITIVE_UPPER_BOUND" xml:space="preserve">
+    <value>"upper bound must be positive ({0})",</value>
+  </data>
+  <data name="EMPTY_POLYNOMIALS_COEFFICIENTS_ARRAY" xml:space="preserve">
+    <value>"empty polynomials coefficients array", </value>
+  </data>
+  <data name="CROSSING_BOUNDARY_LOOPS" xml:space="preserve">
+    <value>"some outline boundary loops cross each other",</value>
+  </data>
+  <data name="FIRST_ROWS_NOT_INITIALIZED_YET" xml:space="preserve">
+    <value>"first {0} rows are not initialized yet",</value>
+  </data>
+  <data name="SINGULAR_MATRIX" xml:space="preserve">
+    <value>"matrix is singular", </value>
+  </data>
+  <data name="UNABLE_TO_SOLVE_SINGULAR_PROBLEM" xml:space="preserve">
+    <value>"unable to solve: singular problem",</value>
+  </data>
+  <data name="SIMPLE_MESSAGE" xml:space="preserve">
+    <value>"{0}",</value>
+  </data>
+  <data name="INVALID_BINARY_DIGIT" xml:space="preserve">
+    <value>"invalid binary digit: {0}",</value>
+  </data>
+  <data name="COLUMN_INDEX" xml:space="preserve">
+    <value>"column index ({0})", </value>
+  </data>
+  <data name="GCD_OVERFLOW_64_BITS" xml:space="preserve">
+    <value>"overflow: gcd({0}, {1}) is 2^63",</value>
+  </data>
+  <data name="NOT_POSITIVE_DEGREES_OF_FREEDOM" xml:space="preserve">
+    <value>"degrees of freedom must be positive ({0})",</value>
+  </data>
+  <data name="ZERO_DENOMINATOR" xml:space="preserve">
+    <value>"denominator must be different from 0", </value>
+  </data>
+  <data name="MAP_MODIFIED_WHILE_ITERATING" xml:space="preserve">
+    <value>"map has been modified while iterating",</value>
+  </data>
+  <data name="WRONG_BLOCK_LENGTH" xml:space="preserve">
+    <value>"wrong array shape (block length = {0}, expected {1})",</value>
+  </data>
+  <data name="EXPONENT" xml:space="preserve">
+    <value>"exponent ({0})", </value>
+  </data>
+  <data name="MAX_COUNT_EXCEEDED" xml:space="preserve">
+    <value>"maximal count ({0}) exceeded", </value>
+  </data>
+  <data name="NON_POSITIVE_DEFINITE_OPERATOR" xml:space="preserve">
+    <value>"non positive definite linear operator", </value>
+  </data>
+  <data name="WHOLE_FORMAT" xml:space="preserve">
+    <value>"whole format", </value>
+  </data>
+  <data name="CUMULATIVE_PROBABILITY_RETURNED_NAN" xml:space="preserve">
+    <value>"Cumulative probability function returned NaN for argument {0} p = {1}",</value>
+  </data>
+  <data name="FUNCTION_NOT_POLYNOMIAL" xml:space="preserve">
+    <value>"function is not polynomial",</value>
+  </data>
+  <data name="CONSTRAINT" xml:space="preserve">
+    <value>"constraint", </value>
+  </data>
+  <data name="NUMBER_OF_ELEMENTS_SHOULD_BE_POSITIVE" xml:space="preserve">
+    <value>"number of elements should be positive ({0})",</value>
+  </data>
+  <data name="INDEX_LARGER_THAN_MAX" xml:space="preserve">
+    <value>"the index specified: {0} is larger than the current maximal index {1}",</value>
+  </data>
+  <data name="FAILED_FRACTION_CONVERSION" xml:space="preserve">
+    <value>"Unable to convert {0} to fraction after {1} iterations",</value>
+  </data>
+  <data name="OUT_OF_BOUND_SIGNIFICANCE_LEVEL" xml:space="preserve">
+    <value>"out of bounds significance level {0}, must be between {1} and {2}",</value>
+  </data>
+  <data name="CONTRACTION_CRITERIA_SMALLER_THAN_ONE" xml:space="preserve">
+    <value>"contraction criteria smaller than one ({0}).  This would lead to a never ending loop of expansion and contraction as an internal storage array length equal to the number of elements would satisfy the contraction criteria.",</value>
+  </data>
+  <data name="NUMBER_OF_SUCCESS_LARGER_THAN_POPULATION_SIZE" xml:space="preserve">
+    <value>"number of successes ({0}) must be less than or equal to population size ({1})",</value>
+  </data>
+  <data name="OUT_OF_BOUNDS_QUANTILE_VALUE" xml:space="preserve">
+    <value>"out of bounds quantile value: {0}, must be in (0, 100]",</value>
+  </data>
+  <data name="NOT_STRICTLY_INCREASING_SEQUENCE" xml:space="preserve">
+    <value>"points {3} and {2} are not strictly increasing ({1} &gt;= {0})", </value>
+  </data>
+  <data name="CANNOT_SUBSTITUTE_ELEMENT_FROM_EMPTY_ARRAY" xml:space="preserve">
+    <value>"cannot substitute an element from an empty array",</value>
+  </data>
+  <data name="ARITHMETIC_EXCEPTION" xml:space="preserve">
+    <value>"arithmetic exception", </value>
+  </data>
+  <data name="TOO_LARGE_TOURNAMENT_ARITY" xml:space="preserve">
+    <value>"tournament arity ({0}) cannot be bigger than population size ({1})",</value>
+  </data>
+  <data name="BOBYQA_BOUND_DIFFERENCE_CONDITION" xml:space="preserve">
+    <value>"the difference between the upper and lower bound must be larger than twice the initial trust region radius ({0})",</value>
+  </data>
+  <data name="ILLEGAL_STATE" xml:space="preserve">
+    <value>"illegal state", </value>
+  </data>
+  <data name="CLASS_DOESNT_IMPLEMENT_COMPARABLE" xml:space="preserve">
+    <value>"class ({0}) does not implement Comparable",</value>
+  </data>
+  <data name="UNKNOWN_PARAMETER" xml:space="preserve">
+    <value>"unknown parameter {0}",</value>
+  </data>
+  <data name="BINOMIAL_NEGATIVE_PARAMETER" xml:space="preserve">
+    <value>"must have n &gt;= 0 for binomial coefficient (n, k), got n = {0}",</value>
+  </data>
+  <data name="NOT_SUBTRACTION_COMPATIBLE_MATRICES" xml:space="preserve">
+    <value>"{0}x{1} and {2}x{3} matrices are not subtraction compatible",</value>
+  </data>
+  <data name="NUMERATOR_FORMAT" xml:space="preserve">
+    <value>"numerator format", </value>
+  </data>
+  <data name="NON_SELF_ADJOINT_OPERATOR" xml:space="preserve">
+    <value>"non self-adjoint linear operator", </value>
+  </data>
+  <data name="POPULATION_SIZE" xml:space="preserve">
+    <value>"population size ({0})", </value>
+  </data>
+  <data name="NUMBER_OF_SUCCESSES" xml:space="preserve">
+    <value>"number of successes ({0})", </value>
+  </data>
+  <data name="CONTINUED_FRACTION_NAN_DIVERGENCE" xml:space="preserve">
+    <value>"Continued fraction diverged to NaN for value {0}",</value>
+  </data>
+  <data name="SINGULAR_OPERATOR" xml:space="preserve">
+    <value>"operator is singular",</value>
+  </data>
+  <data name="NO_DATA" xml:space="preserve">
+    <value>"no data", </value>
+  </data>
+  <data name="FUNCTION_NOT_DIFFERENTIABLE" xml:space="preserve">
+    <value>"function is not differentiable",</value>
+  </data>
+  <data name="GCD_OVERFLOW_32_BITS" xml:space="preserve">
+    <value>"overflow: gcd({0}, {1}) is 2^31",</value>
+  </data>
+  <data name="NOT_STRICTLY_INCREASING_NUMBER_OF_POINTS" xml:space="preserve">
+    <value>"points {0} and {1} are not strictly increasing ({2} &gt;= {3})",</value>
+  </data>
+  <data name="CANNOT_FORMAT_INSTANCE_AS_3D_VECTOR" xml:space="preserve">
+    <value>"cannot format a {0} instance as a 3D vector",</value>
+  </data>
+  <data name="TWO_OR_MORE_VALUES_IN_CATEGORY_REQUIRED" xml:space="preserve">
+    <value>"two or more values required in each category, one has {0}",</value>
+  </data>
+  <data name="CANNOT_COMPUTE_0TH_ROOT_OF_UNITY" xml:space="preserve">
+    <value>"cannot compute 0-th root of unity, indefinite result",</value>
+  </data>
+  <data name="NEGATIVE_NUMBER_OF_TRIALS" xml:space="preserve">
+    <value>"number of trials must be non-negative ({0})",</value>
+  </data>
+  <data name="NON_INVERTIBLE_TRANSFORM" xml:space="preserve">
+    <value>"non-invertible affine transform collapses some lines into single points",</value>
+  </data>
+  <data name="ARRAY_SIZE_EXCEEDS_MAX_VARIABLES" xml:space="preserve">
+    <value>"array size cannot be greater than {0}",</value>
+  </data>
+  <data name="TOO_LARGE_CUTOFF_SINGULAR_VALUE" xml:space="preserve">
+    <value>"cutoff singular value is {0}, should be at most {1}",</value>
+  </data>
+  <data name="OUT_OF_RANGE_ROOT_OF_UNITY_INDEX" xml:space="preserve">
+    <value>"out of range root of unity index {0} (must be in [{1};{2}])",</value>
+  </data>
+  <data name="INITIAL_CAPACITY_NOT_POSITIVE" xml:space="preserve">
+    <value>"initial capacity ({0}) is not positive",</value>
+  </data>
+  <data name="TOO_SMALL_INTEGRATION_INTERVAL" xml:space="preserve">
+    <value>"too small integration interval: length = {0}",</value>
+  </data>
+  <data name="BASE" xml:space="preserve">
+    <value>"base ({0})", </value>
+  </data>
+  <data name="MEAN" xml:space="preserve">
+    <value>"mean ({0})", </value>
+  </data>
+  <data name="NORM" xml:space="preserve">
+    <value>"Norm ({0})", </value>
+  </data>
+  <data name="INSUFFICIENT_DATA" xml:space="preserve">
+    <value>"insufficient data",</value>
+  </data>
+</root>

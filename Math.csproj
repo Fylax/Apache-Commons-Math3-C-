@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5C4017E-E790-4A28-B4F1-708D837A7387}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Math3</RootNamespace>
+    <AssemblyName>Math3</AssemblyName>
+    <DefaultLanguage>it-IT</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="assets\LocalizedFormatsString.fr-FR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizedFormatsString.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="assets\LocalizedFormatsStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizedFormatsStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="complex\Complex.cs" />
+    <Compile Include="complex\ComplexField.cs" />
+    <Compile Include="exception\DimensionMismatchException.cs" />
+    <Compile Include="exception\MathArithmeticException.cs" />
+    <Compile Include="exception\MathIllegalArgumentException.cs" />
+    <Compile Include="exception\MathIllegalNumberException.cs" />
+    <Compile Include="exception\MathIllegalStateException.cs" />
+    <Compile Include="exception\NotFiniteNumberException.cs" />
+    <Compile Include="exception\NotPositiveException.cs" />
+    <Compile Include="exception\NullArgumentException.cs" />
+    <Compile Include="exception\NumberIsTooSmallException.cs" />
+    <Compile Include="exception\util\ArgUtils.cs" />
+    <Compile Include="exception\util\DummyLocalizable.cs" />
+    <Compile Include="exception\util\ExceptionContext.cs" />
+    <Compile Include="exception\util\ExceptionContextProvider.cs" />
+    <Compile Include="exception\util\Localizable.cs" />
+    <Compile Include="exception\util\LocalizedFormats.cs" />
+    <Compile Include="Field.cs" />
+    <Compile Include="FieldElement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\BigDecimal.cs" />
+    <Compile Include="util\FastMath.cs" />
+    <Compile Include="util\FastMathCalc.cs" />
+    <Compile Include="util\FastMathLiteralArrays.cs" />
+    <Compile Include="util\MathUtils.cs" />
+    <Compile Include="util\Precision.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\LocalizedFormatsString.fr-FR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedFormatsString.fr-FR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\LocalizedFormatsStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedFormatsStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENSE" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
