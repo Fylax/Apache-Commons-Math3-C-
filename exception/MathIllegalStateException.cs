@@ -22,7 +22,7 @@ namespace Math3.exception
     /// throwing the exception is in a state that does not comply with
     /// the set of states that it is designed to be in.
     /// </summary>
-    class MathIllegalStateException : System.InvalidOperationException, ExceptionContextProvider
+    public class MathIllegalStateException : System.InvalidOperationException, ExceptionContextProvider
     {
         /// <summary>
         /// Context
