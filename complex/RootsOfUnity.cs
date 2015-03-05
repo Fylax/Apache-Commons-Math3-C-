@@ -82,11 +82,14 @@ namespace Math3.complex
         /// yet</exception>
         public Boolean IsCounterClockWise()
         {
-            if (omegaCount == 0)
+            lock (this)
             {
-                throw new MathIllegalStateException(new LocalizedFormats("ROOTS_OF_UNITY_NOT_COMPUTED_YET"));
+                if (omegaCount == 0)
+                {
+                    throw new MathIllegalStateException(new LocalizedFormats("ROOTS_OF_UNITY_NOT_COMPUTED_YET"));
+                }
+                return isCounterClockWise;
             }
-            return isCounterClockWise;
         }
 
         /// <summary>
@@ -108,34 +111,37 @@ namespace Math3.complex
         /// <exception cref="ZeroException"> if <c>n = 0</c></exception>
         public void computeRoots(int n)
         {
-            if (n == 0)
+            lock (this)
             {
-                throw new ZeroException(new LocalizedFormats("CANNOT_COMPUTE_0TH_ROOT_OF_UNITY"));
+                if (n == 0)
+                {
+                    throw new ZeroException(new LocalizedFormats("CANNOT_COMPUTE_0TH_ROOT_OF_UNITY"));
+                }
+                isCounterClockWise = n > 0;
+                // avoid repetitive calculations
+                int absN = FastMath.abs(n);
+                if (absN == omegaCount)
+                {
+                    return;
+                }
+                // calculate everything from scratch
+                double t = 2.0 * FastMath.PI / absN;
+                double cosT = FastMath.cos(t);
+                double sinT = FastMath.sin(t);
+                omegaReal = new double[absN];
+                omegaImaginaryCounterClockwise = new double[absN];
+                omegaImaginaryClockwise = new double[absN];
+                omegaReal[0] = 1.0;
+                omegaImaginaryCounterClockwise[0] = 0.0;
+                omegaImaginaryClockwise[0] = 0.0;
+                for (int i = 1; i < absN; i++)
+                {
+                    omegaReal[i] = omegaReal[i - 1] * cosT - omegaImaginaryCounterClockwise[i - 1] * sinT;
+                    omegaImaginaryCounterClockwise[i] = omegaReal[i - 1] * sinT + omegaImaginaryCounterClockwise[i - 1] * cosT;
+                    omegaImaginaryClockwise[i] = -omegaImaginaryCounterClockwise[i];
+                }
+                omegaCount = absN;
             }
-            isCounterClockWise = n > 0;
-            // avoid repetitive calculations
-            int absN = FastMath.abs(n);
-            if (absN == omegaCount)
-            {
-                return;
-            }
-            // calculate everything from scratch
-            double t = 2.0 * FastMath.PI / absN;
-            double cosT = FastMath.cos(t);
-            double sinT = FastMath.sin(t);
-            omegaReal = new double[absN];
-            omegaImaginaryCounterClockwise = new double[absN];
-            omegaImaginaryClockwise = new double[absN];
-            omegaReal[0] = 1.0;
-            omegaImaginaryCounterClockwise[0] = 0.0;
-            omegaImaginaryClockwise[0] = 0.0;
-            for (int i = 1; i < absN; i++)
-            {
-                omegaReal[i] = omegaReal[i - 1] * cosT - omegaImaginaryCounterClockwise[i - 1] * sinT;
-                omegaImaginaryCounterClockwise[i] = omegaReal[i - 1] * sinT + omegaImaginaryCounterClockwise[i - 1] * cosT;
-                omegaImaginaryClockwise[i] = -omegaImaginaryCounterClockwise[i];
-            }
-            omegaCount = absN;
         }
 
         /// <summary>
@@ -149,16 +155,19 @@ namespace Math3.complex
         /// range</exception>
         public double getReal(int k)
         {
-            if (omegaCount == 0)
+            lock (this)
             {
-                throw new MathIllegalStateException(new LocalizedFormats("ROOTS_OF_UNITY_NOT_COMPUTED_YET"));
-            }
-            if ((k < 0) || (k >= omegaCount))
-            {
-                throw new OutOfRangeException<Int32>(new LocalizedFormats("OUT_OF_RANGE_ROOT_OF_UNITY_INDEX"), k, 0, omegaCount - 1);
-            }
+                if (omegaCount == 0)
+                {
+                    throw new MathIllegalStateException(new LocalizedFormats("ROOTS_OF_UNITY_NOT_COMPUTED_YET"));
+                }
+                if ((k < 0) || (k >= omegaCount))
+                {
+                    throw new OutOfRangeException<Int32>(new LocalizedFormats("OUT_OF_RANGE_ROOT_OF_UNITY_INDEX"), k, 0, omegaCount - 1);
+                }
 
-            return omegaReal[k];
+                return omegaReal[k];
+            }
         }
 
         /// <summary>
@@ -172,18 +181,20 @@ namespace Math3.complex
         /// range</exception>
         public double getImaginary(int k)
         {
-
-            if (omegaCount == 0)
+            lock (this)
             {
-                throw new MathIllegalStateException(new LocalizedFormats("ROOTS_OF_UNITY_NOT_COMPUTED_YET"));
-            }
-            if ((k < 0) || (k >= omegaCount))
-            {
-                throw new OutOfRangeException<Int32>(new LocalizedFormats("OUT_OF_RANGE_ROOT_OF_UNITY_INDEX"), k, 0, omegaCount - 1);
-            }
+                if (omegaCount == 0)
+                {
+                    throw new MathIllegalStateException(new LocalizedFormats("ROOTS_OF_UNITY_NOT_COMPUTED_YET"));
+                }
+                if ((k < 0) || (k >= omegaCount))
+                {
+                    throw new OutOfRangeException<Int32>(new LocalizedFormats("OUT_OF_RANGE_ROOT_OF_UNITY_INDEX"), k, 0, omegaCount - 1);
+                }
 
-            return isCounterClockWise ? omegaImaginaryCounterClockwise[k] :
-                omegaImaginaryClockwise[k];
+                return isCounterClockWise ? omegaImaginaryCounterClockwise[k] :
+                    omegaImaginaryClockwise[k];
+            }
         }
 
         /// <summary>
@@ -195,7 +206,10 @@ namespace Math3.complex
         /// <returns>the number of roots of unity currently stored</returns>
         public int getNumberOfRoots()
         {
-            return omegaCount;
+            lock (this)
+            {
+                return omegaCount;
+            }
         }
     }
 }

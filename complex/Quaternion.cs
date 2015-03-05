@@ -60,22 +60,22 @@ namespace Math3.complex
         /// <summary>
         /// First component (scalar part).
         /// </summary>
-        private double q0;
+        private readonly double q0;
 
         /// <summary>
         /// Second component (first vector part).
         /// </summary>
-        private double q1;
+        private readonly double q1;
         
         /// <summary>
         /// Third component (second vector part).
         /// </summary>
-        private double q2;
+        private readonly double q2;
        
         /// <summary>
         /// Fourth component (third vector part).
         /// </summary>
-        private double q3;
+        private readonly double q3;
 
         /// <summary>
         /// Builds a quaternion from its components.

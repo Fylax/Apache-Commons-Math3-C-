@@ -26,39 +26,39 @@ namespace Math3.util
         /// 0x40000000 - used to split a double into two parts, both with the low order bits cleared.
         /// Equivalent to 2^30.
         /// </summary>
-        private static long HEX_40000000 = 0x40000000L; // 1073741824L
+        private const long HEX_40000000 = 0x40000000L; // 1073741824L
 
         /// <summary>
         /// Factorial table, for Taylor series expansions. 0!, 1!, 2!, ... 19!
         /// </summary>
-        private static double[] FACT = new double[]
+        private static readonly double[] FACT = new double[]
         {
-        +1.0d,                        // 0
-        +1.0d,                        // 1
-        +2.0d,                        // 2
-        +6.0d,                        // 3
-        +24.0d,                       // 4
-        +120.0d,                      // 5
-        +720.0d,                      // 6
-        +5040.0d,                     // 7
-        +40320.0d,                    // 8
-        +362880.0d,                   // 9
-        +3628800.0d,                  // 10
-        +39916800.0d,                 // 11
-        +479001600.0d,                // 12
-        +6227020800.0d,               // 13
-        +87178291200.0d,              // 14
-        +1307674368000.0d,            // 15
-        +20922789888000.0d,           // 16
-        +355687428096000.0d,          // 17
-        +6402373705728000.0d,         // 18
-        +121645100408832000.0d,       // 19
+            +1.0d,                        // 0
+            +1.0d,                        // 1
+            +2.0d,                        // 2
+            +6.0d,                        // 3
+            +24.0d,                       // 4
+            +120.0d,                      // 5
+            +720.0d,                      // 6
+            +5040.0d,                     // 7
+            +40320.0d,                    // 8
+            +362880.0d,                   // 9
+            +3628800.0d,                  // 10
+            +39916800.0d,                 // 11
+            +479001600.0d,                // 12
+            +6227020800.0d,               // 13
+            +87178291200.0d,              // 14
+            +1307674368000.0d,            // 15
+            +20922789888000.0d,           // 16
+            +355687428096000.0d,          // 17
+            +6402373705728000.0d,         // 18
+            +121645100408832000.0d,       // 19
         };
 
         /// <summary>
         /// Coefficients for slowLog.
         /// </summary>
-        private static double[][] LN_SPLIT_COEF = new double[][]
+        private static readonly double[][] LN_SPLIT_COEF = new double[][]
         {
             new double[] {2.0, 0.0},
             new double[] {0.6666666269302368, 3.9736429850260626E-8},
@@ -81,12 +81,12 @@ namespace Math3.util
         /// <summary>
         /// Table start declaration.
         /// </summary>
-        private static String TABLE_START_DECL = "    {";
+        private const String TABLE_START_DECL = "    {";
 
         /// <summary>
         /// Table end declaration.
         /// </summary>
-        private static String TABLE_END_DECL = "    };";
+        private const String TABLE_END_DECL = "    };";
 
         /// <summary>
         /// Private Constructor.
@@ -103,9 +103,7 @@ namespace Math3.util
         /// <param name="SINE_TABLE_LEN">length of the tables</param>
         /// <param name="TANGENT_TABLE_A">table of the most significant part of the tangents</param>
         /// <param name="TANGENT_TABLE_B">table of the most significant part of the tangents</param>
-        private static void buildSinCosTables(double[] SINE_TABLE_A, double[] SINE_TABLE_B,
-                                              double[] COSINE_TABLE_A, double[] COSINE_TABLE_B,
-                                              int SINE_TABLE_LEN, double[] TANGENT_TABLE_A, double[] TANGENT_TABLE_B)
+        private static void buildSinCosTables(double[] SINE_TABLE_A, double[] SINE_TABLE_B, double[] COSINE_TABLE_A, double[] COSINE_TABLE_B, int SINE_TABLE_LEN, double[] TANGENT_TABLE_A, double[] TANGENT_TABLE_B)
         {
             double[] result = new double[2];
 
@@ -214,7 +212,7 @@ namespace Math3.util
         /// <param name="result">placeholder where to put the result in extended precision
         /// (may be null)</param>
         /// <returns>cos(x)</returns>
-        public static double slowCos(double x, double[] result)
+        internal static double slowCos(double x, double[] result)
         {
 
             double[] xs = new double[2];
@@ -256,7 +254,7 @@ namespace Math3.util
             return ys[0] + ys[1];
         }
 
-        
+
         /// <summary>
         /// For x between 0 and pi/4 compute sine using Taylor expansion:
         /// sin(x) = x - x^3/3! + x^5/5! - x^7/7! ...
@@ -265,7 +263,7 @@ namespace Math3.util
         /// <param name="result">placeholder where to put the result in extended precision
         /// (may be null)</param>
         /// <returns>sin(x)</returns>
-        public static double slowSin(double x, double[] result)
+        internal static double slowSin(double x, double[] result)
         {
             double[] xs = new double[2];
             double[] ys = new double[2];
@@ -314,7 +312,7 @@ namespace Math3.util
         /// <param name="result">placeholder where to place exp(x) split in two terms
         /// for extra precision (i.e. exp(x) = result[0] + result[1]</param>
         /// <returns>exp(x)</returns>
-        public static double slowexp(double x, double[] result)
+        internal static double slowexp(double x, double[] result)
         {
             double[] xs = new double[2];
             double[] ys = new double[2];
@@ -441,7 +439,7 @@ namespace Math3.util
         /// </summary>
         /// <param name="ins">ins initial number, in split form</param>
         /// <param name="result">placeholder where to put the result</param>
-        public static void splitReciprocal(double[] ins, double[] result)
+        internal static void splitReciprocal(double[] ins, double[] result)
         {
             double b = 1.0 / 4194304.0;
             double a = 1.0 - b;
@@ -481,7 +479,7 @@ namespace Math3.util
         /// <param name="a">first term of the multiplication</param>
         /// <param name="b">second term of the multiplication</param>
         /// <param name="result">placeholder where to put the result</param>
-       private static void quadMult(double[] a, double[] b, double[] result)
+        private static void quadMult(double[] a, double[] b, double[] result)
         {
             double[] xs = new double[2];
             double[] ys = new double[2];
@@ -537,7 +535,7 @@ namespace Math3.util
         /// <param name="p">integer whose exponential is requested</param>
         /// <param name="result">placeholder where to put the result in extended precision</param>
         /// <returns>exp(p) in standard precision (equal to result[0] + result[1])</returns>
-        public static double expint(int p, double[] result)
+        internal static double expint(int p, double[] result)
         {
             //double x = M_E;
             double[] xs = new double[2];
@@ -583,12 +581,12 @@ namespace Math3.util
 
         /// <summary>
         /// xi in the range of [1, 2].
-        /// <para>
+        /// <code>
         ///                                3        5        7
         ///      x+1           /          x        x        x          \
         ///  ln ----- =   2 *  |  x  +   ----  +  ----  +  ---- + ...  |
         ///      1-x           \          3        5        7          /
-        ///</para><para>
+        ///</code><para>
         ///So, compute a Remez approximation of the following function
         ///ln ((sqrt(x)+1)/(1-sqrt(x)))  /  x
         ///</para>
@@ -601,7 +599,7 @@ namespace Math3.util
         /// </summary>
         /// <param name="xi">number from which log is requested</param>
         /// <returns>log(xi)</returns>
-        public static double[] slowLog(double xi)
+        internal static double[] slowLog(double xi)
         {
             double[] x = new double[2];
             double[] x2 = new double[2];
@@ -654,7 +652,7 @@ namespace Math3.util
         /// <param name="name">array name</param>
         /// <param name="expectedLen">expected length of the array</param>
         /// <param name="array2d">array data</param>
-        public static void printarray(StreamWriter sw, String name, int expectedLen, double[][] array2d)
+        internal static void printarray(StreamWriter sw, String name, int expectedLen, double[][] array2d)
         {
             sw.WriteLine(name);
             checkLen(expectedLen, array2d.Length);
@@ -713,7 +711,7 @@ namespace Math3.util
         /// <param name="name">array name</param>
         /// <param name="expectedLen">expected length of the array</param>
         /// <param name="array">array data</param>
-        public static void printarray(StreamWriter sw, String name, int expectedLen, double[] array)
+        internal static void printarray(StreamWriter sw, String name, int expectedLen, double[] array)
         {
             sw.WriteLine(name + "=");
             checkLen(expectedLen, array.Length);
@@ -730,7 +728,7 @@ namespace Math3.util
         /// </summary>
         /// <param name="d">number to format</param>
         /// <returns>formatted number</returns>
-        public static String format(double d)
+        internal static String format(double d)
         {
             if (Double.IsNaN(d))
             {

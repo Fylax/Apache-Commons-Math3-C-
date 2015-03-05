@@ -30,12 +30,12 @@ namespace Math3.exception
         /// <summary>
         /// Higher bound.
         /// </summary>
-        private U min;
+        private readonly U min;
         
         /// <summary>
         /// Whether the maximum is included in the allowed range.
         /// </summary>
-        private Boolean boundIsAllowed;
+        private readonly Boolean boundIsAllowed;
 
         /// <summary>
         /// Construct the exception.

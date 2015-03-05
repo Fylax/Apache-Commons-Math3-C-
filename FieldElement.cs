@@ -21,7 +21,6 @@ namespace Math3
     /// <typeparam name="T">the type of the field elements</typeparam>
     public interface FieldElement<T>
     {
-
         /// <summary>
         /// Compute this + a. 
         /// </summary>

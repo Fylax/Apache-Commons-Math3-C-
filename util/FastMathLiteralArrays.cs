@@ -26,7 +26,7 @@ namespace Math3.util
         /// Exponential evaluated at integer values,
         /// exp(x) =  expIntTableA[x + EXP_INT_TABLE_MAX_INDEX] + expIntTableB[x+EXP_INT_TABLE_MAX_INDEX].
         /// </summary>
-        private static double[] EXP_INT_A = new double[]
+        private static readonly double[] EXP_INT_A = new double[]
         {
             +0.0d,
             Double.NaN,
@@ -1534,7 +1534,7 @@ namespace Math3.util
         /// Exponential evaluated at integer values,
         /// exp(x) =  expIntTableA[x + EXP_INT_TABLE_MAX_INDEX] + expIntTableB[x+EXP_INT_TABLE_MAX_INDEX]
         /// </summary>
-        private static double[] EXP_INT_B = new double[]
+        private static readonly double[] EXP_INT_B = new double[]
         {
             +0.0d,
             Double.NaN,
@@ -3043,7 +3043,8 @@ namespace Math3.util
         /// exp(x/1024) =  expFracTableA[x] + expFracTableB[x].
         /// 1024 = 2^10
         /// </summary>
-        private static double[] EXP_FRAC_A = new double[] {
+        private static readonly double[] EXP_FRAC_A = new double[]
+        {
           +1.0d,
           +1.0009770393371582d,
           +1.0019550323486328d,
@@ -5106,7 +5107,7 @@ namespace Math3.util
         /// <summary>
         /// Extended precision logarithm table over the range 1 - 2 in increments of 2^-10.
         /// </summary>
-        private static double[][] LN_MANT = new double[][]
+        private static readonly double[][] LN_MANT = new double[][]
         {
           new double[] {+0.0d,                   +0.0d,                   }, // 0
           new double[] {+9.760860120877624E-4d,  -3.903230345984362E-11d, }, // 1

@@ -28,7 +28,7 @@ namespace Math3.exception
         /// <summary>
         /// Context.
         /// </summary>
-        private ExceptionContext context;
+        private readonly ExceptionContext context;
 
         /// <summary>
         /// </summary>

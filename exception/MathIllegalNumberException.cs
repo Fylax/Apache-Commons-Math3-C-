@@ -34,7 +34,7 @@ namespace Math3.exception
         /// <summary>
         /// Requested.
         /// </summary>
-        protected T argument;
+        protected readonly T argument;
 
         /// <summary>
         /// Construct an exception. 

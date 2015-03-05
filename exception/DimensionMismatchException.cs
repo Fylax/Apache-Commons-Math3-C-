@@ -27,7 +27,7 @@ namespace Math3.exception
         /// <summary>
         /// Correct dimension.
         /// </summary>
-        private Int32 dimension;
+        private readonly Int32 dimension;
 
         /// <summary>
         /// Construct an exception from the mismatched dimensions.

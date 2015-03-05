@@ -36,7 +36,6 @@ namespace Math3.exception
         /// <param name="specific">Specific context pattern.</param>
         /// <param name="wrong">Value that is infinite or NaN.</param>
         /// <param name="args">Optional arguments.</param>
-        public NotFiniteNumberException(Localizable specific, T wrong, params Object[] args)
-            : base(specific, wrong, args) { }
+        public NotFiniteNumberException(Localizable specific, T wrong, params Object[] args)  : base(specific, wrong, args) { }
     }
 }

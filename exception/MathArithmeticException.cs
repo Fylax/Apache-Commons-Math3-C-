@@ -33,9 +33,7 @@ namespace Math3.exception
         /// <summary>
         /// Default constructor.
         /// </summary>
-        public MathArithmeticException()
-            : this(new LocalizedFormats("ARITHMETIC_EXCEPTION"), null)
-        { }
+        public MathArithmeticException() : this(new LocalizedFormats("ARITHMETIC_EXCEPTION"), null) { }
 
         /// <summary>
         /// Simple constructor.

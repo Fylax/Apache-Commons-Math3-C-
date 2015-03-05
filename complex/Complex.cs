@@ -73,27 +73,27 @@ namespace Math3.complex
         /// <summary>
         /// A complex number representing "0.0 + 0.0i"
         /// </summary>
-        public static Complex ZERO = new Complex(0.0, 0.0);
+        public static readonly Complex ZERO = new Complex(0.0, 0.0);
 
         /// <summary>
         /// The imaginary part.
         /// </summary>
-        private double imaginary;
+        private readonly double imaginary;
 
         /// <summary>
         /// The real part.
         /// </summary>
-        private double real;
+        private readonly double real;
 
         /// <summary>
         /// Record whether this complex number is equal to NaN.
         /// </summary>
-        private Boolean isNaN;
+        private readonly Boolean isNaN;
 
         /// <summary>
         /// Record whether this complex number is infinite.
         /// </summary>
-        private Boolean isInfinite;
+        private readonly Boolean isInfinite;
 
         /// <summary>
         /// Create a complex number given only the real part.

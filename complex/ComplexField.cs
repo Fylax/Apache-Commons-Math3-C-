@@ -62,7 +62,7 @@ namespace Math3.complex
         /// Holder for the instance.
         /// <para>We use here the Initialization On Demand Holder Idiom.</para>
         /// </summary>
-        internal static class LazyHolder
+        private static class LazyHolder
         {
             /// <summary>
             /// Cached field instance.

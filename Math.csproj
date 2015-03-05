@@ -34,6 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="analysis\solvers\AbstractUnivariateSolver.cs" />
+    <Compile Include="analysis\solvers\AllowedSolution.cs" />
+    <Compile Include="analysis\solvers\BaseAbstractUnivariateSolver.cs" />
+    <Compile Include="analysis\solvers\BaseUnivariateSolver.cs" />
+    <Compile Include="analysis\solvers\BracketedUnivariateSolver.cs" />
+    <Compile Include="analysis\solvers\BrentSolver.cs" />
+    <Compile Include="analysis\solvers\UnivariateSolver.cs" />
+    <Compile Include="analysis\solvers\UnivariateSolverUtils.cs" />
+    <Compile Include="analysis\UnivariateFunction.cs" />
     <Compile Include="assets\LocalizedFormatsString.fr-FR.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -50,18 +59,47 @@
     <Compile Include="complex\ComplexUtils.cs" />
     <Compile Include="complex\Quaternion.cs" />
     <Compile Include="complex\RootsOfUnity.cs" />
+    <Compile Include="distribution\AbstractIntegerDistribution.cs" />
+    <Compile Include="distribution\AbstractRealDistribution.cs" />
+    <Compile Include="distribution\BetaDistribution.cs" />
+    <Compile Include="distribution\BinomialDistribution.cs" />
+    <Compile Include="distribution\CauchyDistribution.cs" />
+    <Compile Include="distribution\ChiSquaredDistribution.cs" />
+    <Compile Include="distribution\ExponentialDistribution.cs" />
+    <Compile Include="distribution\FDistribution.cs" />
+    <Compile Include="distribution\GammaDistribution.cs" />
+    <Compile Include="distribution\HypergeometricDistribution.cs" />
+    <Compile Include="distribution\IntegerDistribution.cs" />
+    <Compile Include="distribution\NormalDistribution.cs" />
+    <Compile Include="distribution\PascalDistribution.cs" />
+    <Compile Include="distribution\PoissonDistribution.cs" />
+    <Compile Include="distribution\RealDistribution.cs" />
+    <Compile Include="distribution\SaddlePointExpansion.cs" />
+    <Compile Include="distribution\TDistribution.cs" />
+    <Compile Include="distribution\UniformIntegerDistribution.cs" />
+    <Compile Include="distribution\WeibullDistribution.cs" />
+    <Compile Include="distribution\ZipfDistribution.cs" />
+    <Compile Include="exception\ConvergenceException.cs" />
     <Compile Include="exception\DimensionMismatchException.cs" />
     <Compile Include="exception\MathArithmeticException.cs" />
     <Compile Include="exception\MathIllegalArgumentException.cs" />
     <Compile Include="exception\MathIllegalNumberException.cs" />
     <Compile Include="exception\MathIllegalStateException.cs" />
+    <Compile Include="exception\MathInternalError.cs" />
     <Compile Include="exception\MathParseException.cs" />
+    <Compile Include="exception\MaxCountExceededException.cs" />
+    <Compile Include="exception\NoBracketingException.cs" />
     <Compile Include="exception\NoDataException.cs" />
+    <Compile Include="exception\NonMonotonicSequenceException.cs" />
+    <Compile Include="exception\NotANumberException.cs" />
     <Compile Include="exception\NotFiniteNumberException.cs" />
     <Compile Include="exception\NotPositiveException.cs" />
+    <Compile Include="exception\NotStrictlyPositiveException.cs" />
     <Compile Include="exception\NullArgumentException.cs" />
+    <Compile Include="exception\NumberIsTooLargeException.cs" />
     <Compile Include="exception\NumberIsTooSmallException.cs" />
     <Compile Include="exception\OutOfRangeException.cs" />
+    <Compile Include="exception\TooManyEvaluationsException.cs" />
     <Compile Include="exception\util\ArgUtils.cs" />
     <Compile Include="exception\util\DummyLocalizable.cs" />
     <Compile Include="exception\util\ExceptionContext.cs" />
@@ -71,14 +109,36 @@
     <Compile Include="exception\ZeroException.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="FieldElement.cs" />
+    <Compile Include="primes\PollardRho.cs" />
+    <Compile Include="primes\Primes.cs" />
+    <Compile Include="primes\SmallPrimes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="random\AbstractWell.cs" />
+    <Compile Include="random\BitsStreamGenerator.cs" />
+    <Compile Include="random\RandomData.cs" />
+    <Compile Include="random\RandomDataGenerator.cs" />
+    <Compile Include="random\RandomDataImpl.cs" />
+    <Compile Include="random\RandomGenerator.cs" />
+    <Compile Include="random\RandomGeneratorFactory.cs" />
+    <Compile Include="random\Well19937c.cs" />
+    <Compile Include="special\Beta.cs" />
+    <Compile Include="special\Erf.cs" />
+    <Compile Include="special\Gamma.cs" />
+    <Compile Include="util\ArithmeticUtils.cs" />
     <Compile Include="util\BigDecimal.cs" />
+    <Compile Include="util\Combinations.cs" />
+    <Compile Include="util\CombinatoricsUtils.cs" />
     <Compile Include="util\CompositeFormat.cs" />
+    <Compile Include="util\ContinuedFraction.cs" />
+    <Compile Include="util\DoubleArray.cs" />
     <Compile Include="util\FastMath.cs" />
     <Compile Include="util\FastMathCalc.cs" />
     <Compile Include="util\FastMathLiteralArrays.cs" />
+    <Compile Include="util\Incrementor.cs" />
+    <Compile Include="util\MathArrays.cs" />
     <Compile Include="util\MathUtils.cs" />
     <Compile Include="util\Precision.cs" />
+    <Compile Include="util\ResizableDoubleArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="assets\LocalizedFormatsString.fr-FR.resx">
@@ -91,10 +151,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="crypto">
+      <HintPath>packages\Portable.BouncyCastle.1.7.0.1\lib\portable-net4+sl5+wp8+win8+wpa81\crypto.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

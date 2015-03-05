@@ -27,12 +27,12 @@ namespace Math3.exception
         /// <summary>
         /// Lower bound.
         /// </summary>
-        private T lo;
+        private readonly T lo;
         
         /// <summary>
         /// Higher bound.
         /// </summary>
-        private T hi;
+        private readonly T hi;
 
         /// <summary>
         /// Construct an exception from the mismatched dimensions.

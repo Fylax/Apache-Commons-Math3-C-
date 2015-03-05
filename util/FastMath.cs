@@ -247,7 +247,6 @@ namespace Math3.util
             +2.0217439756338078E-10d,
         };
 
-
         /// <summary>
         /// Tangent table, used by atan() (high bits).
         /// </summary>

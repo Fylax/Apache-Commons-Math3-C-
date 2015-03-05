@@ -28,7 +28,7 @@ namespace Math3.exception.util
         /// <summary>
         /// Source English format.
         /// </summary>
-        private String sourceFormat;
+        private readonly String sourceFormat;
 
         /// <summary>
         /// Simple constructor.

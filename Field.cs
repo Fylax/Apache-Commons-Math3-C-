@@ -26,7 +26,6 @@ namespace Math3
    /// <typeparam name="T">the type of the field elements</typeparam>
     public interface Field<T>
     {
-
         /// <summary>
         /// Get the additive identity of the field.
         /// <para>
@@ -55,6 +54,5 @@ namespace Math3
         /// <returns>The <c>Type</c> object that represents the runtime
         /// Type of this object.</returns>
         Type getRuntimeClass();
-
     }
 }
