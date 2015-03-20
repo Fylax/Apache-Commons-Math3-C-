@@ -229,8 +229,8 @@ namespace Math3.distribution
 
         /// <inheritdoc/>
         /// <remarks>
-        /// For numerator degrees of freedom parameter {@code a} and denominator
-        /// degrees of freedom parameter {@code b}, the variance is
+        /// For numerator degrees of freedom parameter <c>a</c> and denominator
+        /// degrees of freedom parameter <c>b</c>, the variance is
         /// <list type="bullet">
         /// <item>if <c>b > 4</c> then
         /// <c>[2 * b^2 * (a + b - 2)] / [a * (b - 2)^2 * (b - 4)]</c>,</item>

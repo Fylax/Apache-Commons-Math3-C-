@@ -15,8 +15,8 @@
 namespace Math3.analysis.solvers
 {
     /// <summary>
-    /// The kinds of solutions that a {@link BracketedUnivariateSolver
-    /// (bracketed univariate real) root-finding algorithm} may accept as solutions
+    /// The kinds of solutions that a <see cref="BracketedUnivariateSolver
+    /// (bracketed univariate real) root-finding algorithm"/> may accept as solutions
     /// This basically controls whether or not under-approximations 
     /// over-approximations are 
     /// <para>If all solutions are accepted (<see cref="ANY_SIDE"/>), then the 

@@ -65,7 +65,7 @@ namespace Math3.random
         /// <param name="upper">upper bound for generated long integer</param>
         /// <returns>a random long integer greater than or equal to <c>lower</c> and
         /// less than or equal to <c>upper</c></returns>
-        /// <exception cref="NumberIsTooLargeException"> if {@code lower >= upper}</exception>
+        /// <exception cref="NumberIsTooLargeException"> if <c>lower >= upper</c></exception>
         long nextLong(long lower, long upper);
 
         /// <summary>
@@ -139,7 +139,7 @@ namespace Math3.random
         /// <para>
         /// Definition:
         /// <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm">
-        /// Normal Distribution</a></p>
+        /// Normal Distribution</a></para>
         /// </summary>
         /// <param name="mu">the mean of the distribution</param>
         /// <param name="sigma">the standard deviation of the distribution</param>
@@ -166,7 +166,7 @@ namespace Math3.random
         /// <para>
         /// Definition:
         /// <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda3662.htm">
-        /// Uniform Distribution</a> {@code lower} and {@code upper - lower} are the
+        /// Uniform Distribution</a> <c>lower</c> and <c>upper - lower</c> are the
         /// <a href = "http://www.itl.nist.gov/div898/handbook/eda/section3/eda364.htm">
         /// location and scale parameters</a>, respectively.</para>
         /// </summary>
@@ -187,7 +187,7 @@ namespace Math3.random
         /// <para>
         /// Definition:
         /// <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda3662.htm">
-        /// Uniform Distribution</a> {@code lower} and {@code upper - lower} are the
+        /// Uniform Distribution</a> <c>lower</c> and <c>upper - lower</c> are the
         /// <a href = "http://www.itl.nist.gov/div898/handbook/eda/section3/eda364.htm">
         /// location and scale parameters</a>, respectively.</para>
         /// </summary>

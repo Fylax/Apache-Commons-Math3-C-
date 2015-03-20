@@ -294,6 +294,37 @@ namespace Math3.util
             return false;
         }
 
+        public BigDecimal divide(BigDecimal Divisor)
+        {
+            return this.divide(Divisor, BigDecimal.ROUND_HALF_UP);
+        }
+
+        public BigDecimal divide(BigDecimal Divisor, Int32 RoundingMethod)
+        {
+            if(RoundingMethod < 0 || RoundingMethod > 7)
+            {
+                throw new ArgumentException("Invalid Rounding Method");
+            }
+            Int32 DecimalDigits1 = (Int32)Math.Floor(BigInteger.Log10(this.DecimalPart) + 1);
+            Int32 DecimalDigits2 = (Int32)Math.Floor(BigInteger.Log10(Divisor.DecimalPart) + 1);
+            Int32 Multiplicator = (DecimalDigits1 > DecimalDigits2) ? DecimalDigits1 : DecimalDigits2;
+            BigInteger Dividend1 = (this.IntegerPart * Multiplicator) + this.DecimalPart;
+            BigInteger Dividend2 = (Divisor.IntegerPart * Multiplicator) + Divisor.DecimalPart;
+            BigInteger Division = Dividend1 / Dividend2;
+            Int32 Scale = (DecimalDigits1 < DecimalDigits2) ? DecimalDigits1 : DecimalDigits2;
+            return new BigDecimal(Division).SetScale(Scale, (Byte)RoundingMethod);
+        }
+        public BigDecimal divide(BigDecimal Divisor, Int32 Scale, Int32 RoundingMethod)
+        {
+            Int32 DecimalDigits1 = (Int32)Math.Floor(BigInteger.Log10(this.DecimalPart) + 1);
+            Int32 DecimalDigits2 = (Int32)Math.Floor(BigInteger.Log10(Divisor.DecimalPart) + 1);
+            Int32 Multiplicator = (DecimalDigits1 > DecimalDigits2) ? DecimalDigits1 : DecimalDigits2;
+            BigInteger Dividend1 = (this.IntegerPart * Multiplicator) + this.DecimalPart;      
+            BigInteger Dividend2 = (Divisor.IntegerPart * Multiplicator) + Divisor.DecimalPart;
+            BigInteger Division = Dividend1 / Dividend2;
+            return new BigDecimal(Division).SetScale(Scale, (Byte)RoundingMethod);
+        }
+
         /// <summary>
         /// Returns a BigDecimal whose scale is the specified value, and whose
         /// unscaled value is determined by multiplying or dividing this BigDecimal's

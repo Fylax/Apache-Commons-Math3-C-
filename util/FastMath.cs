@@ -2737,7 +2737,7 @@ namespace Math3.util
         /// <param name="xa">number from which arctangent is requested</param>
         /// <param name="xb">extra bits for x (may be 0.0)</param>
         /// <param name="leftPlane">if true, result angle must be put in the left half plane</param>
-        /// <returns>atan(xa + xb) (or angle shifted by {@code PI} if leftPlane is true)</returns>
+        /// <returns>atan(xa + xb) (or angle shifted by <c>PI</c> if leftPlane is true)</returns>
         private static double atan(double xa, double xb, Boolean leftPlane)
         {
             if (xa == 0.0)
@@ -3742,7 +3742,7 @@ namespace Math3.util
         /// If <c>direction</c> is greater than <c>f</c>,
         /// the smallest machine representable number strictly greater than
         /// <c>f</c> is returned; if less, then the largest representable number
-        /// strictly less than {@code f} is returned.</para>
+        /// strictly less than <c>f</c> is returned.</para>
         /// <para>
         /// If <c>f</c> is infinite and direction does not
         /// bring it back to finite numbers, it is returned unchanged.</para>
@@ -3909,11 +3909,12 @@ namespace Math3.util
             return (a <= b) ? a : b;
         }
 
-        /** Compute the minimum of two values
-         * @param a first value
-         * @param b second value
-         * @return a if a is lesser or equal to b, b otherwise
-         */
+        /// <summary>
+        /// Compute the minimum of two values
+        /// </summary>
+        /// <param name="a">first value</param>
+        /// <param name="b">second value</param>
+        /// <returns>a if a is lesser or equal to b, b otherwise</returns>
         public static long min(long a, long b)
         {
             return (a <= b) ? a : b;

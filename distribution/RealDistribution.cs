@@ -45,7 +45,7 @@ namespace Math3.distribution
         double density(double x);
 
         /// <summary>
-        /// For a random variable {@code X} whose values are distributed according
+        /// For a random variable <c>X</c> whose values are distributed according
         /// to this distribution, this method returns <c>P(X <= x)</c>. In other
         /// words, this method represents the (cumulative) distribution function
         /// (CDF) for this distribution.

@@ -39,7 +39,7 @@ namespace Math3.distribution
     /// For a random variable <c>X</c> whose values are distributed according to this
     /// distribution, the probability mass function is given by<para/>
     /// <c>P(X = k) = C(k + r - 1, r - 1) * p^r * (1 - p)^k</c>,<para/>
-    /// where <c>r</c> is the number of successes, {@code p} is the probability of
+    /// where <c>r</c> is the number of successes, <c>p</c> is the probability of
     /// success, and <c>X</c> is the total number of failures. <c>C(n, k)</c> is
     /// the binomial coefficient (<c>n</c> choose <c>k</c>). The mean and variance
     /// of <c>X</c> are<para/>

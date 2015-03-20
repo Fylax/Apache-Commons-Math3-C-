@@ -32,7 +32,7 @@ namespace Math3.exception.util
         /// Transform a multidimensional array into a one-dimensional list.
         /// </summary>
         /// <param name="array">Array (possibly multidimensional).</param>
-        /// <returns>a list of all the {@code Object} instances contained in
+        /// <returns>a list of all the <c>Object</c> instances contained in
         /// <code>array</code>.</returns>
         public static Object[] flatten(Object[] array)
         {
@@ -41,7 +41,7 @@ namespace Math3.exception.util
             {
                 foreach (Object o in array)
                 {
-                    if (o.GetType() == typeof(Object[]))
+                    if (o is Object[])
                     {
                         foreach (Object oR in flatten((Object[])o))
                         {

@@ -239,7 +239,7 @@ namespace Math3.analysis.solvers
         /// <list type="bullet">
         /// <item> at least one positive and one negative value have been found --  success!</item>
         /// <item> both endpoints have reached their respective limites -- NoBracketingException </item>
-        /// <item> {@code maximumIterations} iterations elapse -- NoBracketingException </item>
+        /// <item> <c>maximumIterations</c> iterations elapse -- NoBracketingException </item>
         /// </list></para>
         /// <para>
         /// If different signs are found at first iteration (<c>k=1</c>), then the returned
@@ -271,7 +271,7 @@ namespace Math3.analysis.solvers
         /// <c>f(4-2) = f(2) = -1</c> and <c>f(4+2) = f(6) = -5</c> for <c>k = 1</c>, then
         /// <c>f(4-4) = f(0) = +1</c> and <c>f(4+4) = f(8) = -7</c> for <c>k = 2</c>. Then it will
         /// return the interval <c>[0, 2]</c> as the smallest one known to be bracketing the root.
-        /// As shown by this example, the initial value (here {@code 4}) may lie outside of the
+        /// As shown by this example, the initial value (here <c>4</c>) may lie outside of the
         /// returned bracketing interval.
         /// </para>
         /// </summary>
@@ -420,7 +420,7 @@ namespace Math3.analysis.solvers
         }
 
         /// <summary>
-        /// Check that {@code lower < initial < upper}.
+        /// Check that <c>lower < initial < upper</c>.
         /// </summary>
         /// <param name="lower">Lower endpoint.</param>
         /// <param name="initial">Initial value.</param>

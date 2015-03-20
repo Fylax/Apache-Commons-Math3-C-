@@ -292,7 +292,7 @@ namespace Math3.complex
             {
                 return true;
             }
-            if (other.GetType() == typeof(Quaternion))
+            if (other is Quaternion)
             {
                 Quaternion q = (Quaternion)other;
                 return q0 == q.getQ0() &&
@@ -304,7 +304,7 @@ namespace Math3.complex
         }
 
         /// <inheritdoc/>
-        public int hashCode()
+        public override Int32 GetHashCode()
         {
             // "Effective Java" (second edition, p. 47).
             int result = 17;
@@ -314,12 +314,6 @@ namespace Math3.complex
                 result = 31 * result + c;
             }
             return result;
-        }
-
-        /// <inheritdoc/>
-        public override Int32 GetHashCode()
-        {
-            return this.hashCode();
         }
 
         /// <summary>

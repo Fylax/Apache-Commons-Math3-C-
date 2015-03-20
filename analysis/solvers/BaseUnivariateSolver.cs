@@ -19,7 +19,7 @@ namespace Math3.analysis.solvers
     /// Implementations will search for only one zero in the given interval.
     /// This class is not intended for use outside of the Apache Commons Math
     /// library, regular user should rely on more specific interfaces like
-    /// {@link UnivariateSolver}, {@link PolynomialSolver} or {@link
+    /// <see cref="UnivariateSolver"/>, <see cref="PolynomialSolver"/> or {@link
     /// DifferentiableUnivariateSolver}.
     /// </summary>
     /// <typeparam name="FUNC">Type of function to solve.</typeparam>
@@ -111,7 +111,7 @@ namespace Math3.analysis.solvers
         double solve(int maxEval, FUNC f, double min, double max, double startValue);
 
         /// <summary>
-        /// Solve for a zero in the vicinity of {@code startValue}.
+        /// Solve for a zero in the vicinity of <c>startValue</c>.
         /// </summary>
         /// <param name="maxEval">Maximum number of evaluations.</param>
         /// <param name="f">Function to solve.</param>

@@ -101,11 +101,11 @@ namespace Math3.util
         /// </summary>
         private const double DEFAULT_CONTRACTION_DELTA = 0.5;
 
-        /**
-         * The contraction criteria determines when the internal array will be
-         * contracted to fit the number of elements contained in the element
-         *  array + 1.
-         */
+        /// <summary>
+        /// The contraction criteria determines when the internal array will be
+        /// contracted to fit the number of elements contained in the element
+        /// array + 1.
+        /// </summary>
         private double contractionCriterion = 2.5;
 
         /// <summary>
@@ -1134,13 +1134,13 @@ namespace Math3.util
         /// <param name="obj">object to be compared for equality with this</param>
         /// <returns>true iff obj is a ResizableDoubleArray with the same data and
         /// properties as this</returns>
-        public Boolean equals(Object obj)
+        public override Boolean Equals(Object obj)
         {
             if (obj == this)
             {
                 return true;
             }
-            if (obj.GetType() == typeof(ResizableDoubleArray))
+            if (obj is ResizableDoubleArray)
             {
                 return false;
             }
@@ -1167,17 +1167,11 @@ namespace Math3.util
             }
         }
 
-        /// <inheritdoc cref="equals(Object)"/>
-        public override Boolean Equals(Object obj)
-        {
-            return this.equals(obj);
-        }
-
         /// <summary>
         /// Returns a hash code consistent with equals.
         /// </summary>
         /// <returns>the hash code representing this <c>ResizableDoubleArray</c>.</returns>
-        public int hashCode()
+        public override int GetHashCode()
         {
             lock (this)
             {
@@ -1190,12 +1184,6 @@ namespace Math3.util
                 hashData[5] = startIndex;
                 return hashData.GetHashCode();
             }
-        }
-
-        /// <inheritdoc cref="hashCode()"/>
-        public override int GetHashCode()
-        {
-            return this.hashCode();
         }
     }
 }

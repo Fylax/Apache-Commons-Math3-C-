@@ -84,7 +84,7 @@ namespace Math3.distribution
         /// <param name="x0">Lower bound (excluded).</param>
         /// <param name="x1">Upper bound (included).</param>
         /// <returns>the probability that a random variable with this distribution
-        /// takes a value between {@code x0} and {@code x1}, excluding the lower
+        /// takes a value between <c>x0</c> and <c>x1</c>, excluding the lower
         /// and including the upper endpoint.</returns>
         /// <exception cref="NumberIsTooLargeException"> if <c>x0 > x1</c>.
         /// The default implementation uses the identity
@@ -346,7 +346,7 @@ namespace Math3.distribution
 
         /// <summary>
         /// Returns the natural logarithm of the probability density function (PDF) of
-        /// this distribution evaluated at the specified point {@code x}. In general, the PDF
+        /// this distribution evaluated at the specified point <c>x</c>. In general, the PDF
         /// is the derivative of the <see cref="cumulativeProbability(double)">CDF</see>. 
         /// If the derivative does not exist at <c>x<c>, then an appropriate replacement should
         /// be returned, e.g. <c>Double.PositiveInfinity</c>, <c>Double.NaN</c>, or the limit 

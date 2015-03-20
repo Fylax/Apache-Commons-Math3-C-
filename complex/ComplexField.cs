@@ -54,7 +54,7 @@ namespace Math3.complex
         /// <inheritdoc/>
         public Type getRuntimeClass()
         {
-            return typeof(Complex);
+            return this.GetType();
         }
 
         // CHECKSTYLE: stop HideUtilityClassConstructor

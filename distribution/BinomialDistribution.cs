@@ -54,7 +54,7 @@ namespace Math3.distribution
         /// <param name="trials">Number of trials.</param>
         /// <param name="p">Probability of success.</param>
         /// <exception cref="NotPositiveException"> if <c>trials < 0</c></exception>.
-        /// <exception cref="OutOfRangeException"> if {@code p < 0} or {@code p > 1}.</exception>
+        /// <exception cref="OutOfRangeException"> if <c>p < 0</c> or <c>p > 1</c>.</exception>
         public BinomialDistribution(int trials, double p) : this(new Well19937c(), trials, p) { }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace Math3.distribution
             return probabilityOfSuccess;
         }
 
-        /** {@inheritDoc} */
+        /// <inheritdoc/>
         public override double probability(int x)
         {
             double LogProbability = logProbability(x);

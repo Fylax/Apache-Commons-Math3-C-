@@ -247,8 +247,7 @@ namespace Math3.complex
         public StringBuilder format(Object obj, StringBuilder toAppendTo)
         {
             StringBuilder ret = null;
-            Type objType = obj.GetType();
-            if (objType == typeof(Complex))
+            if (obj is Complex)
             {
                 ret = format((Complex)obj, toAppendTo);
             }

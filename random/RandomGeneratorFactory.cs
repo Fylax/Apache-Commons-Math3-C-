@@ -48,37 +48,37 @@ namespace Math3.random
                 this.rng = rng;
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public void setSeed(int seed)
             {
                 this.rng = new Random(seed);
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public void setSeed(int[] seed)
             {
                 this.rng = new Random((Int32)convertToLong(seed));
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public void setSeed(long seed)
             {
                 this.rng = new Random((Int32)seed);
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public void nextBytes(byte[] bytes)
             {
                 rng.NextBytes(bytes);
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public int nextInt()
             {
                 return rng.Next();
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public int nextInt(int n)
             {
                 if (n <= 0)
@@ -88,31 +88,31 @@ namespace Math3.random
                 return rng.Next(n);
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public long nextLong()
             {
                 return (Int32)rng.Next();
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public Boolean nextBoolean()
             {
                 return Convert.ToBoolean(rng.Next());
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public float nextFloat()
             {
                 return (Single)rng.NextDouble();
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public double nextDouble()
             {
                 return rng.NextDouble();
             }
 
-            /** {@inheritDoc} */
+            /// <inheritdoc/>
             public double nextGaussian()
             {
                 return rng.NextDouble();

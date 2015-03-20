@@ -411,14 +411,9 @@ namespace Math3.complex
         /// <param name="x">First value (cannot be <c>null</c>).</param>
         /// <param name="y">Second value (cannot be <c>null</c>).</param>
         /// <returns> <c>true</c> if the values are equal.</returns>
-        public static Boolean equals(Complex x, Complex y)
-        {
-            return equals(x, y, 1);
-        }
-
         public override Boolean Equals(Object ToBeCompared)
         {
-            if (ToBeCompared.GetType() == this.GetType())
+            if (ToBeCompared is Complex)
             {
                 return Complex.equals(this, (Complex)ToBeCompared, 1);
             }
@@ -478,7 +473,7 @@ namespace Math3.complex
         /// the same hash code <c>7</c>.
         /// </summary>
         /// <returns>a hash code value for this object.</returns>
-        public int hashCode()
+        public override int GetHashCode()
         {
             if (isNaN)
             {
@@ -486,11 +481,6 @@ namespace Math3.complex
             }
             return 37 * (17 * MathUtils.hash(imaginary) +
                 MathUtils.hash(real));
-        }
-
-        public override Int32 GetHashCode()
-        {
-            return this.hashCode();
         }
 
         /// <summary>
@@ -542,7 +532,7 @@ namespace Math3.complex
         /// <code>
         ///   (a + bi)(c + di) = (ac - bd) + (ad + bc)i
         /// </code>
-        /// Returns {@link #NaN} if either <c>this</c> or <c>factor</c> has one or
+        /// Returns <see cref="#NaN"/> if either <c>this</c> or <c>factor</c> has one or
         /// more <c>NaN</c> parts.
         /// <para/>
         /// Returns <see cref="INF"/> if neither <c>this</c> nor <c>factor</c> has one
@@ -748,7 +738,7 @@ namespace Math3.complex
         /// <code>
         ///  asin(z) = -i (log(sqrt(1 - z<sup>2</sup>) + iz))
         /// </code>
-        /// Returns {@link Complex#NaN} if either real or imaginary part of the
+        /// Returns <see cref="Complex#NaN"/> if either real or imaginary part of the
         /// input argument is <c>NaN</c> or infinite.
         /// </summary>
         /// <returns>the inverse sine of this complex number.</returns>
@@ -1138,7 +1128,7 @@ namespace Math3.complex
         /// <see cref="FastMath.sin"/>, <see cref="FastMath.cos"/>,
         /// <see cref="FastMathcosh"/> and <see cref="FastMath.sinh"/>.
         /// <para/>
-        /// Returns {@link Complex#NaN} if either real or imaginary part of the
+        /// Returns <see cref="Complex#NaN"/> if either real or imaginary part of the
         /// input argument is <c>NaN</c>.
         /// <para/>
         /// Infinite (or critical) values in real or imaginary parts of the input may

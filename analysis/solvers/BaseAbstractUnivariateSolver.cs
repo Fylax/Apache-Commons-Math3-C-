@@ -259,7 +259,7 @@ namespace Math3.analysis.solvers
         }
 
         /// <summary>
-        /// Check that {@code lower < initial < upper}.
+        /// Check that <c>lower < initial < upper</c>.
         /// </summary>
         /// <param name="lower">Lower endpoint.</param>
         /// <param name="initial">Initial value.</param>

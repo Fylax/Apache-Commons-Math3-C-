@@ -70,9 +70,9 @@ namespace Math3
         T divide(T a);
 
         /// <summary>
-        /// Returns the multiplicative inverse of {@code this} element.
+        /// Returns the multiplicative inverse of <c>this</c> element.
         /// </summary>
-        /// <returns>the inverse of {@code this}.</returns>
+        /// <returns>the inverse of <c>this</c>.</returns>
         /// <exception cref="MathArithmeticException">if <c>this</c> is zero</exception>
         T reciprocal();
 

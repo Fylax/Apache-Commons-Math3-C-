@@ -151,7 +151,7 @@ namespace Math3.util
 
         /// <summary>
         /// Returns true if both arguments are NaN or neither is NaN and they are
-        /// equal as defined by {@link #equals(float,float) equals(x, y, 1)}.
+        /// equal as defined by <see cref="#equals(float,float) equals(x, y, 1)"/>.
         /// </summary>
         /// <param name="x">first value</param>
         /// <param name="y">second value</param>
@@ -480,19 +480,20 @@ namespace Math3.util
             return round(x, scale, BigDecimal.ROUND_HALF_UP);
         }
 
-        /**
-         * Rounds the given value to the specified number of decimal places.
-         * The value is rounded using the given method which is any method defined
-         * in {@link BigDecimal}.
-         *
-         * @param x Value to round.
-         * @param scale Number of digits to the right of the decimal point.
-         * @param roundingMethod Rounding method as defined in {@link BigDecimal}.
-         * @return the rounded value.
-         * @since 1.1 (previously in {@code MathUtils}, moved as of version 3.0)
-         * @throws MathArithmeticException if an exact operation is required but result is not exact
-         * @throws MathIllegalArgumentException if {@code roundingMethod} is not a valid rounding method.
-         */
+        /// <summary>
+        /// Rounds the given value to the specified number of decimal places.
+        /// The value is rounded using the given method which is any method defined
+        /// in <see cref="BigDecimal"/>.
+        /// </summary>
+        /// <param name="x">Value to round.</param>
+        /// <param name="scale">Number of digits to the right of the decimal point</param>
+        /// <param name="roundingMethod">Rounding method as defined in <see cref="BigDecimal"/>.
+        /// </param>
+        /// <returns>the rounded value.</returns>
+        /// <exception cref="MathArithmeticException"> if an exact operation is required but 
+        /// result is not exact</exception>
+        /// <exception cref="MathIllegalArgumentException"> if <c>roundingMethod</c> is not a
+        /// valid rounding method.</exception>
         public static float round(float x, int scale, int roundingMethod)
         {
             float sign = FastMath.copySign(1f, x);
@@ -500,19 +501,20 @@ namespace Math3.util
             return (float)roundUnscaled(x * factor, sign, roundingMethod) / factor;
         }
 
-        /**
-         * Rounds the given non-negative value to the "nearest" integer. Nearest is
-         * determined by the rounding method specified. Rounding methods are defined
-         * in {@link BigDecimal}.
-         *
-         * @param unscaled Value to round.
-         * @param sign Sign of the original, scaled value.
-         * @param roundingMethod Rounding method, as defined in {@link BigDecimal}.
-         * @return the rounded value.
-         * @throws MathArithmeticException if an exact operation is required but result is not exact
-         * @throws MathIllegalArgumentException if {@code roundingMethod} is not a valid rounding method.
-         * @since 1.1 (previously in {@code MathUtils}, moved as of version 3.0)
-         */
+        /// <summary>
+        /// Rounds the given non-negative value to the "nearest" integer. Nearest is
+        /// determined by the rounding method specified. Rounding methods are defined
+        /// in <see cref="BigDecimal"/>.
+        /// </summary>
+        /// <param name="unscaled">Value to round.</param>
+        /// <param name="sign">Sign of the original, scaled value.</param>
+        /// <param name="roundingMethod">Rounding method, as defined in <see cref="BigDecimal"/>.
+        /// </param>
+        /// <returns>the rounded value.</returns>
+        /// <exception cref="MathArithmeticException"> if an exact operation is required but 
+        /// result is not exact</exception>
+        /// <exception cref="MathIllegalArgumentException"> if <c>roundingMethod</c> is not a
+        /// valid rounding method.</exception>
         private static double roundUnscaled(double unscaled, double sign, int roundingMethod)
         {
             switch (roundingMethod)
@@ -621,21 +623,19 @@ namespace Math3.util
             return unscaled;
         }
 
-
-        /**
-         * Computes a number {@code delta} close to {@code originalDelta} with
-         * the property that <pre><code>
-         *   x + delta - x
-         * </code></pre>
-         * is exactly machine-representable.
-         * This is useful when computing numerical derivatives, in order to reduce
-         * roundoff errors.
-         *
-         * @param x Value.
-         * @param originalDelta Offset value.
-         * @return a number {@code delta} so that {@code x + delta} and {@code x}
-         * differ by a representable floating number.
-         */
+        /// <summary>
+        /// Computes a number <c>delta</c> close to <c>originalDelta</c> with
+        /// the property that <code>
+        ///   x + delta - x
+        /// </code>
+        /// is exactly machine-representable.
+        /// This is useful when computing numerical derivatives, in order to reduce
+        /// roundoff errors.
+        /// </summary>
+        /// <param name="x">Value.</param>
+        /// <param name="originalDelta">Offset value.</param>
+        /// <returns>a number <c>delta</c> so that <c>x + delta</c> and <c>x</c>
+        /// differ by a representable floating number.</returns>
         public static double representableDelta(double x,
                                                 double originalDelta)
         {

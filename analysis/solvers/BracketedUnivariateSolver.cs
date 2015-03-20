@@ -60,7 +60,7 @@ namespace Math3.analysis.solvers
         double solve(int maxEval, FUNC f, double min, double max, AllowedSolution allowedSolution);
 
         /// <summary>
-        /// Solve for a zero in the given interval, start at {@code startValue}.
+        /// Solve for a zero in the given interval, start at <c>startValue</c>.
         /// A solver may require that the interval brackets a single zero root.
         /// Solvers that do require bracketing should be able to handle the case
         /// where one of the endpoints is itself a root.

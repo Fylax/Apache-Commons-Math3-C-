@@ -229,7 +229,7 @@ namespace Math3.distribution
         /// Series</a>.
         /// </summary>
         /// <param name="n">Term in the series to calculate (must be larger than 1)</param>
-        /// <param name="m">Exponent (special case {@code m = 1} is the harmonic series).</param>
+        /// <param name="m">Exponent (special case <c>m = 1</c> is the harmonic series).</param>
         /// <returns>the n^{th} generalized harmonic number.</returns>
         private double generalizedHarmonic(int n, double m)
         {

@@ -64,7 +64,7 @@ namespace Math3.util
         /// <summary>
         /// Returns an exact representation of the <a
         /// href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
-        /// Coefficient</a>, "{@code n choose k}", the number of
+        /// Coefficient</a>, "<c>n choose k</c>", the number of
         /// <c>k</c>-element subsets that can be selected from an
         /// <c>n</c>-element set.
         /// <para>
@@ -95,7 +95,7 @@ namespace Math3.util
         /// <summary>
         /// Returns a <c>double</c> representation of the <a
         /// href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
-        /// Coefficient</a>, "{@code n choose k}", the number of
+        /// Coefficient</a>, "<c>n choose k</c>", the number of
         /// <c>k</c>-element subsets that can be selected from an
         /// <c>n</c>-element set.
         /// <para>

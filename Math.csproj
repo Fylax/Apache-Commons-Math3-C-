@@ -34,6 +34,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="analysis\BivariateFunction.cs" />
+    <Compile Include="analysis\DifferentiableMultivariateFunction.cs" />
+    <Compile Include="analysis\DifferentiableMultivariateVectorFunction.cs" />
+    <Compile Include="analysis\DifferentiableUnivariateFunction.cs" />
+    <Compile Include="analysis\differentiation\DerivativeStructure.cs" />
+    <Compile Include="analysis\differentiation\DSCompiler.cs" />
+    <Compile Include="analysis\differentiation\MultivariateDifferentiableFunction.cs" />
+    <Compile Include="analysis\differentiation\MultivariateDifferentiableVectorFunction.cs" />
+    <Compile Include="analysis\differentiation\UnivariateDifferentiableFunction.cs" />
+    <Compile Include="analysis\FunctionUtils.cs" />
+    <Compile Include="analysis\function\Add.cs" />
+    <Compile Include="analysis\function\Constant.cs" />
+    <Compile Include="analysis\function\Divide.cs" />
+    <Compile Include="analysis\function\Identity.cs" />
+    <Compile Include="analysis\function\Multiply.cs" />
+    <Compile Include="analysis\MultivariateFunction.cs" />
+    <Compile Include="analysis\MultivariateMatrixFunction.cs" />
+    <Compile Include="analysis\MultivariateVectorFunction.cs" />
     <Compile Include="analysis\solvers\AbstractUnivariateSolver.cs" />
     <Compile Include="analysis\solvers\AllowedSolution.cs" />
     <Compile Include="analysis\solvers\BaseAbstractUnivariateSolver.cs" />
@@ -87,7 +105,9 @@
     <Compile Include="exception\MathIllegalStateException.cs" />
     <Compile Include="exception\MathInternalError.cs" />
     <Compile Include="exception\MathParseException.cs" />
+    <Compile Include="exception\MathUnsupportedOperationException.cs" />
     <Compile Include="exception\MaxCountExceededException.cs" />
+    <Compile Include="exception\MultiDimensionMismatchException.cs" />
     <Compile Include="exception\NoBracketingException.cs" />
     <Compile Include="exception\NoDataException.cs" />
     <Compile Include="exception\NonMonotonicSequenceException.cs" />
@@ -109,6 +129,51 @@
     <Compile Include="exception\ZeroException.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="FieldElement.cs" />
+    <Compile Include="fraction\BigFraction.cs" />
+    <Compile Include="fraction\BigFractionField.cs" />
+    <Compile Include="fraction\Fraction.cs" />
+    <Compile Include="fraction\FractionConversionException.cs" />
+    <Compile Include="fraction\FractionField.cs" />
+    <Compile Include="linear\AbstractFieldMatrix.cs" />
+    <Compile Include="linear\AbstractRealMatrix.cs" />
+    <Compile Include="linear\AnyMatrix.cs" />
+    <Compile Include="linear\Array2DRowFieldMatrix.cs" />
+    <Compile Include="linear\ArrayFieldVector.cs" />
+    <Compile Include="linear\ArrayRealVector.cs" />
+    <Compile Include="linear\BlockFieldMatrix.cs" />
+    <Compile Include="linear\BlockRealMatrix.cs" />
+    <Compile Include="linear\DecompositionSolver.cs" />
+    <Compile Include="linear\DefaultFieldMatrixChangingVisitor.cs" />
+    <Compile Include="linear\DefaultFieldMatrixPreservingVisitor.cs" />
+    <Compile Include="linear\DefaultRealMatrixChangingVisitor.cs" />
+    <Compile Include="linear\DefaultRealMatrixPreservingVisitor.cs" />
+    <Compile Include="linear\DiagonalMatrix.cs" />
+    <Compile Include="linear\FieldMatrix.cs" />
+    <Compile Include="linear\FieldMatrixChangingVisitor.cs" />
+    <Compile Include="linear\FieldMatrixPreservingVisitor.cs" />
+    <Compile Include="linear\FieldVector.cs" />
+    <Compile Include="linear\FieldVectorChangingVisitor.cs" />
+    <Compile Include="linear\FieldVectorPreservingVisitor.cs" />
+    <Compile Include="linear\MathParseException.cs" />
+    <Compile Include="linear\MatrixDimensionMismatchException.cs" />
+    <Compile Include="linear\MatrixUtils.cs" />
+    <Compile Include="linear\NonSquareMatrixException.cs" />
+    <Compile Include="linear\NonSymmetricMatrixException.cs" />
+    <Compile Include="linear\OpenMapRealMatrix.cs" />
+    <Compile Include="linear\QRDecomposition.cs" />
+    <Compile Include="linear\RealLinearOperator.cs" />
+    <Compile Include="linear\RealMatrix.cs" />
+    <Compile Include="linear\RealMatrixChangingVisitor.cs" />
+    <Compile Include="linear\RealMatrixFormat.cs" />
+    <Compile Include="linear\RealMatrixPreservingVisitor.cs" />
+    <Compile Include="linear\RealVector.cs" />
+    <Compile Include="linear\RealVectorChangingVisitor.cs" />
+    <Compile Include="linear\RealVectorFormat.cs" />
+    <Compile Include="linear\RealVectorPreservingVisitor.cs" />
+    <Compile Include="linear\SingularMatrixException.cs" />
+    <Compile Include="linear\SingularValueDecomposition.cs" />
+    <Compile Include="linear\SparseRealMatrix.cs" />
+    <Compile Include="linear\SparseRealVector.cs" />
     <Compile Include="primes\PollardRho.cs" />
     <Compile Include="primes\Primes.cs" />
     <Compile Include="primes\SmallPrimes.cs" />
@@ -121,10 +186,12 @@
     <Compile Include="random\RandomGenerator.cs" />
     <Compile Include="random\RandomGeneratorFactory.cs" />
     <Compile Include="random\Well19937c.cs" />
+    <Compile Include="RealFieldElement.cs" />
     <Compile Include="special\Beta.cs" />
     <Compile Include="special\Erf.cs" />
     <Compile Include="special\Gamma.cs" />
     <Compile Include="util\ArithmeticUtils.cs" />
+    <Compile Include="linear\Array2DRowRealMatrix.cs" />
     <Compile Include="util\BigDecimal.cs" />
     <Compile Include="util\Combinations.cs" />
     <Compile Include="util\CombinatoricsUtils.cs" />
@@ -137,6 +204,7 @@
     <Compile Include="util\Incrementor.cs" />
     <Compile Include="util\MathArrays.cs" />
     <Compile Include="util\MathUtils.cs" />
+    <Compile Include="util\OpenIntToDoubleHashMap.cs" />
     <Compile Include="util\Precision.cs" />
     <Compile Include="util\ResizableDoubleArray.cs" />
   </ItemGroup>
@@ -162,6 +230,7 @@
       <HintPath>packages\Portable.BouncyCastle.1.7.0.1\lib\portable-net4+sl5+wp8+win8+wpa81\crypto.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

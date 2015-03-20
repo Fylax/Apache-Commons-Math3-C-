@@ -57,7 +57,7 @@ namespace Math3.exception.util
             return source;
         }
 
-        public String toString()
+        public override String ToString()
         {
             return source;
         }

@@ -1297,7 +1297,7 @@ namespace Math3.util
         }
 
         /// <summary>
-        /// Returns {@code true} iff both arguments are <c>null</c> or have same
+        /// Returns <c>true</c> iff both arguments are <c>null</c> or have same
         /// dimensions and all their elements are equal as defined by
         /// <see cref="Precision.equals(double,double)"/>.
         /// </summary>

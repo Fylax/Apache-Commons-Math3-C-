@@ -517,18 +517,17 @@ namespace Math3.util
                 return this.compare(c1, c2);
             }
 
-            /**
-             * Computes the value (in base 10) represented by the digit
-             * (interpreted in base {@code n}) in the input array in reverse
-             * order.
-             * For example if {@code c} is {@code {3, 2, 1}}, and {@code n}
-             * is 3, the method will return 18.
-             *
-             * @param c Input array.
-             * @return the lexicographic norm.
-             * @throws OutOfRangeException if an element of the array is not
-             * within the interval [0, {@code n}).
-             */
+            /// <summary>
+            /// Computes the value (in base 10) represented by the digit
+            /// (interpreted in base <c>n</c>) in the input array in reverse
+            /// order.
+            /// For example if <c>c</c> is <c>{3, 2, 1</c>}, and <c>n</c>
+            /// is 3, the method will return 18.
+            /// </summary>
+            /// <param name="c">Input array.</param>
+            /// <returns>the lexicographic norm.</returns>
+            /// <exception cref="OutOfRangeException"> if an element of the array is not
+            /// within the interval [0, <c>n</c>).</exception>
             private long lexNorm(int[] c)
             {
                 long ret = 0;

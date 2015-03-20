@@ -39,11 +39,11 @@ namespace Math3.complex
         /// </summary>
         private double[] omegaReal;
 
-        /**
-         * Imaginary part of the <c>n-th</c> roots of unity, for positive values
-         * of <c>n</c>. In this array, the roots are stored in counter-clockwise
-         * order.
-         */
+        /// <summary>
+        /// Imaginary part of the <c>n-th</c> roots of unity, for positive values
+        /// of <c>n</c>. In this array, the roots are stored in counter-clockwise
+        /// order.
+        /// </summary>
         private double[] omegaImaginaryCounterClockwise;
 
         /// <summary>

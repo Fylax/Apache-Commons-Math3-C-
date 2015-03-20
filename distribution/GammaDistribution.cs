@@ -303,7 +303,7 @@ namespace Math3.distribution
         public new double logDensity(double x)
         {
             /*
-             * see the comment in {@link #density(double)} for computation details
+             * see the comment in <see cref="#density(double)"/> for computation details
              */
             if (x < 0)
             {
@@ -356,7 +356,7 @@ namespace Math3.distribution
             return ret;
         }
 
-        /** {@inheritDoc} */
+        /// <inheritdoc/>
         protected new double getSolverAbsoluteAccuracy()
         {
             return solverAbsoluteAccuracy;
