@@ -23,7 +23,21 @@ namespace Math3.util
     /// </summary>
     public class Precision
     {
-
+        /// <summary>
+        /// <para>
+        /// Largest double-precision floating-point number such that
+        /// <c>1 + EPSILON</c> is numerically equal to 1. This value is an upper
+        /// bound on the relative error due to rounding real numbers to double
+        /// precision floating-point numbers.
+        /// </para>
+        /// <para>
+        /// In IEEE 754 arithmetic, this is 2<sup>-53</sup>.
+        /// </para>
+        /// </summary>
+        /// <remarks>
+        /// See <a href="http://en.wikipedia.org/wiki/Machine_epsilon">Machine epsilon</a>
+        /// </remarks>
+        public static readonly double EPSILON;
 
         /// <summary>
         /// Safe minimum, such that <c>1 / SAFE_MIN</c> does not overflow.
