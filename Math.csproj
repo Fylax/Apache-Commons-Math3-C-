@@ -151,6 +151,8 @@
     <Compile Include="linear\DefaultRealMatrixPreservingVisitor.cs" />
     <Compile Include="linear\DiagonalMatrix.cs" />
     <Compile Include="linear\EigenDecomposition.cs" />
+    <Compile Include="linear\FieldDecompositionSolver.cs" />
+    <Compile Include="linear\FieldLUDecomposition.cs" />
     <Compile Include="linear\FieldMatrix.cs" />
     <Compile Include="linear\FieldMatrixChangingVisitor.cs" />
     <Compile Include="linear\FieldMatrixPreservingVisitor.cs" />
